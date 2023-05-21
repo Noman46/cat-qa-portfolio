@@ -197,3 +197,240 @@ body{
     left: 70px;
     top: 5px;
 }
+.sidedomb1{
+    background-color: orange;
+    height: 125px;
+    width: 140px;
+    position: absolute;
+    left: 180px;
+    top: 430px;
+    z-index: -6;
+}
+.sidedomb2{
+    background-color: orange;
+    height: 125px;
+    width: 140px;
+    position: absolute;
+    left: 580px;
+    top: 430px;
+    z-index: -6;
+}
+.smalldomb{
+    background-color: orange;
+    height: 60px;
+    width: 130px;
+    position: absolute;
+    border-radius: 50% 50% 0 0;
+    left: 185px;
+    top: 368px;
+    box-shadow: 400px 0 orange;
+    z-index: -6;
+}
+.smalldombtip1{
+    background-color: orange;
+    height: 25px;
+    width: 5px;
+    position: absolute;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    left: 245px;
+    top: 345px;
+}
+.smalldombtip2{
+    background-color: orange;
+    height: 25px;
+    width: 5px;
+    position: absolute;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    left: 645px;
+    top: 345px;
+}
+.smalldoor{
+    background-color: black;
+    height: 70px;
+    width: 30px;
+    position: absolute;
+    border-radius: 50px 50px 0 0;
+    left: 10px;
+    top: 50px;
+    box-shadow: 90px 0 black;
+}
+.smallmiddledoor{
+    background-color: white;
+    height: 90px;
+    width: 50px;
+    position: absolute;
+    border-radius: 50px 50px 0 0;
+    left: 45px;
+    top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.minar1{
+    width: 50px;
+    height: 100px;
+    background-color: orange;
+    position: absolute;
+    left: 80px;
+    top: 470px;
+    clip-path: polygon(9% 0, 91% 0, 100% 100%, 0% 100%);
+    border: 1px solid black;
+    z-index: -6;
+}
+.minarjointer1{
+    width: 50px;
+    height: 30px;
+    background-color: orange;
+    position: absolute;
+    clip-path: polygon(6% 30%, 95% 31%, 100% 50%, 92% 64%, 9% 64%, 0% 50%);
+    left: 80px;
+    top: 450px;
+}
+.innerminarjoin{
+    width: 45px;
+    height: 25px;
+    background-color: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    clip-path: polygon(6% 30%, 95% 31%, 100% 50%, 92% 64%, 9% 64%, 0% 50%);
+}
+
+.minar2{
+    width: 45px;
+    height: 100px;
+    background-color: orange;
+    position: absolute;
+    left: 82px;
+    top: 355px;
+    clip-path: polygon(9% 0, 91% 0, 100% 100%, 0% 100%);
+    border: 1px solid black;
+}
+
+.minarjointer2{
+    width: 50px;
+    height: 30px;
+    background-color: orange;
+    position: absolute;
+    clip-path: polygon(6% 30%, 95% 31%, 100% 50%, 92% 64%, 9% 64%, 0% 50%);
+    left: 80px;
+    top: 335px;
+}
+
+.minar3{
+    width: 40px;
+    height: 90px;
+    background-color: orange;
+    position: absolute;
+    clip-path: polygon(9% 0, 91% 0, 100% 100%, 0% 100%);
+    border: 1px solid black;
+    left: 84px;
+    top: 250px;
+}
+.minarjointer3{
+    width: 50px;
+    height: 30px;
+    background-color: orange;
+    position: absolute;
+    clip-path: polygon(6% 30%, 95% 31%, 100% 50%, 92% 64%, 9% 64%, 0% 50%);
+    left: 80px;
+    top:230px
+
+}
+.minar4{
+    width: 35px;
+    height: 85px;
+    background-color: orange;
+    position: absolute;
+    left: 87px;
+    top: 150px;
+    clip-path: polygon(9% 0, 91% 0, 100% 100%, 0% 100%);
+    border: 1px solid black;
+}
+.minarjointer4{
+    width: 40px;
+    height: 6px;
+    background-color: black;
+    position: absolute;
+    border-radius: 5px;
+    left: 85px;
+    top: 143px;
+
+}
+
+.minarTomb{
+    width: 35px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50px 50px 0 0;
+    left: 88px;
+    top: 122px;
+}
+.tombStar{
+    width: 3px;
+    height: 15px;
+    background-color: green;
+    position: absolute;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    left: 103px;
+    top: 106px;
+}
+
+.minarWindow{
+    width: 25px;
+    height: 40px;
+    background-color: black;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 50px 50px 0 0;
+    left: 11px;
+    top: 25px;
+}
+.minarWindow2{
+    width: 25px;
+    height: 40px;
+    background-color: black;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 50px 50px 0 0;
+    left: 10px;
+    top: 25px;
+}
+.minarWindow3{
+    width: 25px;
+    height: 38px;
+    background-color: black;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 50px 50px 0 0;
+    left: 8px;
+    top: 25px;
+}
+.minarWindow4{
+    width: 20px;
+    height: 30px;
+    background-color: black;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 50px 50px 0 0;
+    left: 6px;
+    top: 25px;
+}
