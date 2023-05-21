@@ -1,0 +1,246 @@
+body{
+    background-color: #1f2964;
+    padding: 0;
+    margin: 0;
+
+}
+
+.dinocontent{
+    border: 1px solid white;
+    height: 430px;
+    width: 600px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+.head{
+    background-color: orange;
+    height: 45px;
+    width: 100px;
+    position: absolute;
+    top: 40px;
+    left: 400px;
+
+}
+.headcap{
+    background-color: orange;
+    height: 8px;
+    width: 90px;
+    position: absolute;
+    top:32px;
+    left:407px
+}
+.mouth1{
+    background-color: orange;
+    height: 12px;
+    width: 50px;
+    position: absolute;
+    top:85px;
+    left:400px
+}
+.mouth2{
+    background-color: orange;
+    height: 10px;
+    width: 82px;
+    position: absolute;
+    top:97px;
+    left:400px
+}
+.eye{
+    background-color: black;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 44px;
+    left: 413px;
+    animation: eyeblink 1s infinite
+
+}
+@keyframes eyeblink{
+    50%{
+        transform: scaleY(0.4);
+    }
+}
+.neck1{
+    background-color: orange;
+    height: 12px;
+    width: 48px;
+    position: absolute;
+    top:107px;
+    left:388px
+}
+.neck2{
+    background-color: orange;
+    height: 12px;
+    width: 60px;
+    position: absolute;
+    top:118px;
+    left:376px
+}
+.neck3{
+    background-color: orange;
+    height: 12px;
+    width: 75px;
+    position: absolute;
+    top:130px;
+    left: 361px
+}
+.neck4{
+    background-color: orange;
+    height: 12px;
+    width: 90px;
+    position: absolute;
+    top:142px;
+    left:346px
+}
+.hand1{
+    background-color: orange;
+    height: 12px;
+    width: 22px;
+    position: absolute;
+    top:130px;
+    left: 436px
+
+}
+.hand2{
+    background-color: orange;
+    height: 22px;
+    width: 12px;
+    position: absolute;
+    top:130px;
+    left: 448px
+
+}
+.belly1{
+    background-color: orange;
+    height: 37px;
+    width: 147px;
+    position: absolute;
+    top: 154px;
+    left: 289px
+}
+
+.belly2{
+    background-color: orange;
+    height: 12px;
+    width: 129px;
+    position: absolute;
+    top: 191px;
+    left: 297px
+
+}
+.belly3{
+    background-color: orange;
+    height: 12px;
+    width: 110px;
+    position: absolute;
+    top: 203px;
+    left: 306px
+
+}
+.tail1{
+    background-color: orange;
+    height: 45px;
+    width: 12px;
+    position: absolute;
+    top: 133px;
+    left: 277px
+}
+.tail2{
+    background-color: orange;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    top: 142px;
+    left: 289px
+}
+.tail3{
+    background-color: orange;
+    height: 55px;
+    width: 12px;
+    position: absolute;
+    top: 115px;
+    left: 265px;
+
+}
+.pad1{
+    background-color: orange;
+    height: 4px;
+    width: 92px;
+    position: absolute;
+    top: 215px;
+    left: 313px
+}
+.pad2{
+    background-color: orange;
+    height: 4px;
+    width: 88px;
+    position: absolute;
+    top: 219px;
+    left: 317px
+}
+.pad3{
+    background-color: orange;
+    height: 4px;
+    width: 85px;
+    position: absolute;
+    top: 223px;
+    left: 320px
+}
+.leftleg1{
+    background-color: orange;
+    height: 13px;
+    width: 35px;
+    position: absolute;
+    top: 227px;
+    left: 320px
+}
+.leftleg2{
+    background-color: orange;
+    height: 10px;
+    width: 22px;
+    position: absolute;
+    top: 240px;
+    left: 320px
+}
+.leftleg3{
+    background-color: orange;
+    height: 13px;
+    width: 10px;
+    position: absolute;
+    top: 250px;
+    left: 320px
+}
+.leftleg4{
+    background-color: orange;
+    height: 10px;
+    width: 22px;
+    position: absolute;
+    top: 263px;
+    left: 320px
+}
+.rightleg1{
+    background-color: orange;
+    height: 13px;
+    width: 30px;
+    position: absolute;
+    top: 227px;
+    left: 375px
+}
+.rightleg2{
+    background-color: orange;
+    height: 33px;
+    width: 10px;
+    position: absolute;
+    top: 240px;
+    left: 395px;
+}
+.rightleg3{
+    background-color: orange;
+    height: 10px;
+    width: 22px;
+    position: absolute;
+    top: 270px;
+    left: 395px
+}
