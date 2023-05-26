@@ -276,13 +276,6 @@ body{
 
 
 
-
-
-
-
-
-
-
 .minar1{
     width: 50px;
     height: 100px;
@@ -425,6 +418,179 @@ body{
     top: 25px;
 }
 .minarWindow4{
+    width: 20px;
+    height: 30px;
+    background-color: black;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 50px 50px 0 0;
+    left: 6px;
+    top: 25px;
+}
+
+
+
+
+.minarfull2 .minar21{
+    width: 50px;
+    height: 100px;
+    background-color: orange;
+    position: absolute;
+    left: 750px;
+    top: 470px;
+    clip-path: polygon(9% 0, 91% 0, 100% 100%, 0% 100%);
+    border: 1px solid black;
+    z-index: -6;
+}
+
+.minarjointer21{
+    width: 50px;
+    height: 30px;
+    background-color: orange;
+    position: absolute;
+    clip-path: polygon(6% 30%, 95% 31%, 100% 50%, 92% 64%, 9% 64%, 0% 50%);
+    left: 750px;
+    top: 450px;
+}
+
+.innerminarjoin21{
+    width: 45px;
+    height: 25px;
+    background-color: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    clip-path: polygon(6% 30%, 95% 31%, 100% 50%, 92% 64%, 9% 64%, 0% 50%);
+}
+
+.minar22{
+    width: 45px;
+    height: 100px;
+    background-color: orange;
+    position: absolute;
+    left: 752px;
+    top: 355px;
+    clip-path: polygon(9% 0, 91% 0, 100% 100%, 0% 100%);
+    border: 1px solid black;
+}
+
+.minarjointer22{
+    width: 50px;
+    height: 30px;
+    background-color: orange;
+    position: absolute;
+    clip-path: polygon(6% 30%, 95% 31%, 100% 50%, 92% 64%, 9% 64%, 0% 50%);
+    left: 750px;
+    top: 335px;
+}
+.innerminarjoin22{
+    width: 45px;
+    height: 25px;
+    background-color: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    clip-path: polygon(6% 30%, 95% 31%, 100% 50%, 92% 64%, 9% 64%, 0% 50%);
+}
+.minar23{
+    width: 40px;
+    height: 90px;
+    background-color: orange;
+    position: absolute;
+    clip-path: polygon(9% 0, 91% 0, 100% 100%, 0% 100%);
+    border: 1px solid black;
+    left: 754px;
+    top: 250px;
+}
+.minarjointer23{
+    width: 50px;
+    height: 30px;
+    background-color: orange;
+    position: absolute;
+    clip-path: polygon(6% 30%, 95% 31%, 100% 50%, 92% 64%, 9% 64%, 0% 50%);
+    left: 750px;
+    top: 229px;
+}
+.innerminarjoin23{
+    width: 45px;
+    height: 25px;
+    background-color: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    clip-path: polygon(6% 30%, 95% 31%, 100% 50%, 92% 64%, 9% 64%, 0% 50%);
+}
+.minar24{
+    width: 35px;
+    height: 85px;
+    background-color: orange;
+    position: absolute;
+    left: 756px;
+    top: 149px;
+    clip-path: polygon(9% 0, 91% 0, 100% 100%, 0% 100%);
+    border: 1px solid black;
+}
+.minarjointer24{
+    width: 40px;
+    height: 6px;
+    background-color: black;
+    position: absolute;
+    border-radius: 5px;
+    left: 754px;
+    top: 142px;
+
+}
+
+.minarTomb2{
+    width: 35px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50px 50px 0 0;
+    left: 756px;
+    top: 121px;
+}
+.tombStar2{
+    width: 3px;
+    height: 15px;
+    background-color: green;
+    position: absolute;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    left: 772px;
+    top: 106px;
+}
+
+.minarWindow21{
+    width: 25px;
+    height: 40px;
+    background-color: black;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 50px 50px 0 0;
+    left: 11px;
+    top: 25px;
+}
+.minarWindow22{
+    width: 25px;
+    height: 40px;
+    background-color: black;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 50px 50px 0 0;
+    left: 10px;
+    top: 25px;
+}
+.minarWindow23{
+    width: 25px;
+    height: 38px;
+    background-color: black;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 50px 50px 0 0;
+    left: 8px;
+    top: 25px;
+}
+.minarWindow24{
     width: 20px;
     height: 30px;
     background-color: black;
