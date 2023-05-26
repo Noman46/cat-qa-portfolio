@@ -3,19 +3,46 @@ body{
     padding: 0;
     margin: 0;
 }
-
 .cardmaincontainer{
     border: 2px solid #e1c564;
-    height: 700px;
+    height: 800px;
     width: 900px;
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
     z-index: 1;
-
 }
-
+.moon{
+    height: 400px;
+    width: 400px;
+    background-color: transparent;
+    position: absolute;
+    box-shadow: -90px  20px 0 -10px #fbef06;
+    border-radius: 50%;
+    left: 250px;
+    top: -10px;
+    z-index: -10;
+}
+.moonborder{
+    height: 390px;
+    width: 390px;
+    background-color: transparent;
+    position: absolute;
+    border-left: 1px solid black;
+    border-radius: 50%;
+    left: 195px;
+    top: 15px;
+    z-index: -10;
+}
+.coverupbox{
+    height: 20px;
+    width: 50px;
+    background-color: #FAF9F6;
+    position: absolute;
+    left: 345px;
+    top: 15px;
+}
 .cloud .babycloud1{
     height: 100px;
     width: 130px;
@@ -65,8 +92,7 @@ body{
     top: 560px;
     background-color: white;
     transform: skew(10deg, 10deg);
-    box-shadow: 8px 8px 8px 8px gray;
-    
+    box-shadow: 8px 8px 8px 8px gray;  
 }
 .cloud .babycloud6{
     height: 100px;
@@ -97,7 +123,6 @@ body{
     top: 560px;
     z-index: 0;
 }
-
 .domb{
     background-color: orange;
     height: 130px;
@@ -427,6 +452,15 @@ body{
     left: 6px;
     top: 25px;
 }
+
+
+
+
+
+
+
+
+
 
 
 
