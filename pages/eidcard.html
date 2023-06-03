@@ -5,13 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/eidcard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     <title>Eid Card</title>
+
 </head>
 <body>
     <div class="cardmaincontainer">
         <div class="moon"></div>
         <div class="moonborder"></div>
         <div class="coverupbox"></div>
+        <div class="externalCloud1"></div>
+        <div class="externalCloud2"></div>
+        <div class="verticalLine1"></div>
+        <div class="lightCercle1"></div>
+        <div class="lightCercle2"></div>
+        <div class="verticalLine2"></div>
+        <div class="lightCercle3"></div>
+        <div class="lightCercle4"></div>
         <div class="cloud">
             <div class="babycloud1"></div>
             <div class="babycloud2"></div>
@@ -108,12 +121,24 @@
             </div>
         </div>
 
-
-
-
-
-
-        
+    
+        <div class="greetings">
+            <p id="greetingText">Eid Mubarak <span id="greetingName"></span> !! You might be wondering how you can show your 
+            appreciation for this work. Here is the Bkash number <button id="bkashButton" onclick="showNumber()">bKash</button>.
+            You can send a salami.<span id="myNumber" style="color: green;"></span></p>
+            
+        </div>
     </div>
+
+    <script>
+        //const myKeyValues = window.location.search;
+        const urlParams = new URLSearchParams(window.location.search)
+        const name = urlParams.get('name')
+        document.getElementById("greetingName").innerHTML = name;
+        function showNumber() 
+        {
+            document.getElementById("myNumber").innerHTML = "  01613-504046";
+        }
+    </script>
 </body>
 </html>
