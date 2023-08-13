@@ -1,45 +1,17 @@
+
 .hero{
-    position: relative;
     width: 100%;
     height: 100vh;
-    background: #66A586 ;
+    background: #171717; ;
     position: relative;
-}
-
-nav{
-    display: flex;
-    width: 84%;
-    margin: auto;
-    padding: 20px 0;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo{
-    width: 220px;
-    height: 80px;
-    cursor: pointer;
-}
-
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-}
-
-nav ul li a:hover{
-    color: red;
+   
 }
 
 .detel{
+    position: relative;
     margin-left: 8%;
-    margin-top: 15%;
+    top: 500px;
+
 }
 
 .detel h1{
@@ -115,6 +87,7 @@ nav ul li a:hover{
 .social{
     margin-left: 8%;
     margin-top: 100px;
+    
 }
 
 .social a{
@@ -123,7 +96,11 @@ nav ul li a:hover{
     margin-right: 20px;
 }
 
-.social a:hover{
-    color: orange;
+
+.fab{
+ color: orange;
+}
+.social i:hover{
+    color: rgb(249, 219, 163);
 }
 
