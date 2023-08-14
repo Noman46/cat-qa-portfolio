@@ -22,13 +22,13 @@
 
 
 .container .section:nth-child(1){
-    background-color: #171717;
+    background-color: #000000;
     top: 0;
 }
 
 .container .section:nth-child(2){
-    background: #171717;
+    background: #000000;
 }
 .container .section:nth-child(3){
-    background: #171717;
+    background: #000000;
 }

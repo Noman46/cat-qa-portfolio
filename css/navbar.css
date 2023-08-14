@@ -6,12 +6,10 @@ nav{
     padding: 20px 0;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 100;
-    background: #8A8A8A;
-    opacity: .5;
-    
+    background: #000000;  
 }
 .scrolled{
     background-color: red
