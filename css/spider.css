@@ -20,6 +20,7 @@
 {
     position: absolute;
     top: 0;
+    opacity: 0.3;
     animation: animateSpider 15s ease-in-out infinite;
 }
 @keyframes animateSpider
@@ -42,6 +43,7 @@
     position: absolute;
     top: 100px;
     right: 200px;
+    opacity: 0.2;
     animation: animateZoom1 5s ease-in-out infinite;
 
 }
@@ -67,6 +69,7 @@
     bottom: 50px;
     left: 50px;
     z-index: 1;
+    opacity: 0.3;
     animation: animateZoom2 2s ease-in-out infinite;
 }
 @keyframes animateZoom2 {
@@ -91,12 +94,13 @@
     height: 100%;
     object-fit: cover;
     mix-blend-mode: screen;
+    opacity: 0.2;
 }
 .myname
 {
     position: relative;
     font-family: 'Courgette', cursive;
-    color: rgb(203, 200, 200);
+    color: orange;
     font-size: 8vw;
     font-weight: 100;
     text-shadow: 6px 6px rgb(66, 66, 65);
