@@ -9,10 +9,39 @@
     <link rel="stylesheet" href="../css/spider.css">
     <link rel="stylesheet" href="../css/myBioStyle.css">
     <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/insect.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>CatQa Home</title>
 </head>
 <body>
+    <div class="cursor">
+
+        <div class="redbox">
+            <div class="whitehead">
+                <div class="blackhead">
+                    <div class="redhead">
+                        <div class="eyes1"></div>
+                        <div class="eyes2"></div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="mentis1"> </div>
+            <div class="mentis2"> </div>
+            <div class="tail1"> </div>
+            <div class="tail2"> </div>
+            <div class="divider"> </div>
+            <div class="blackdots1"></div>
+            <div class="blackdots2"></div>
+            <div class="blackdots3"></div>
+            <div class="blackdots4"></div>
+        </div>
+        
+      </div>
+
+
+
+
     <div class="container">
 
         <nav>
@@ -138,6 +167,14 @@
                 section.scrollIntoView({ behavior: "smooth" });
             }
         }
+
+    const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', (e) => {
+  cursor.style.left = e.clientX + 'px';
+  cursor.style.top = e.clientY + 'px';
+});
+
     </script>
 
 </body>
