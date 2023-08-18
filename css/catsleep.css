@@ -8,10 +8,6 @@
     left: 50%;
     top: 50%;
 }
-.cattext{
-
-    position: absolute;
-}
 .cat{
     background-color: orange;
     height: 65px;
@@ -19,8 +15,7 @@
     border-radius: 0 80px 80px 0;
     position: absolute;
     bottom: 60px;
-    right: 50px;
-
+    right: 100px;
 }
 
 .ear{
@@ -183,4 +178,16 @@
     50%{
         transform: scaleX(0.8);
     }
+}
+.cattext{
+    width: 500px;
+    position: absolute;
+    color: white;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 15px;
+    padding: 10px;
+    letter-spacing: 3px;
+    line-height: 1.6;
+    top: 300px;
+    left: 300px;
 }
