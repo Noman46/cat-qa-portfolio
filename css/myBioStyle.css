@@ -107,3 +107,40 @@
     color: rgb(249, 219, 163);
 }
 
+
+
+/* 400 px */
+@media (max-width: 400px) {
+    .me{
+        width: 400px;
+    }
+    .shape{
+        width: 400px;
+    }
+    .social{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .shape{
+        display: none;
+    }
+    .social{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 900px) {
+
+    .social{
+        display: none;
+    }
+    .detel{
+        display: none;
+    }
+    
+}
+
