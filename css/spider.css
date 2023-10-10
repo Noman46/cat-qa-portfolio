@@ -222,5 +222,14 @@
         width: 400px;
         height: 400px;
     }
+    .spiderweb
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        mix-blend-mode: screen;
+        opacity: 0.5;
+    }
 
 }
