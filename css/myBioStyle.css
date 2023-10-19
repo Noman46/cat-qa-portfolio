@@ -71,7 +71,9 @@
 }
 
 .images img{
-    height: 100%;
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -111,12 +113,6 @@
 
 /* 400 px */
 @media (max-width: 400px) {
-    .me{
-        width: 400px;
-    }
-    .shape{
-        width: 400px;
-    }
     .social{
         display: none;
     }
@@ -131,9 +127,6 @@
 }
 
 @media (max-width: 900px) {
-    .shape{
-        display: none;
-    }
     .social{
         display: none;
     }

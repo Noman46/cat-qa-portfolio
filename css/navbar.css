@@ -36,12 +36,50 @@ nav ul li a{
 nav ul li a:hover{
     color: red;
 }
+
 .burgermenue{
+    position: relative;
     font-size:30px;
     cursor:pointer;
-    color: white;
-    display: none;
+    color: #FF3131;
+    display: flex;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 40px;
 }
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .overlay .closebtn {
+    position: absolute;
+    top: 100px;
+    right: 45px;
+    font-size: 50px;
+    color: red;
+  }
 
 /* 980 px */
 @media (max-width: 62em) {
@@ -55,19 +93,7 @@ nav ul li a:hover{
     .cursor{
         display: none;
     }
-    .burgermenue{
-        position: relative;
-        font-size:30px;
-        cursor:pointer;
-        color: #FF3131;
-        display: flex;
-        float: left;
-        margin-bottom: 10px;
-        margin-right: 10px;
-       
 
-
-    }
 }
 
 @media (pointer:coarse) {
