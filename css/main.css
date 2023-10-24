@@ -54,7 +54,7 @@
       background: yellowgreen;
       inset: 0;
       margin: auto;
-      animation: circle 2.5s ease-in-out infinite alternate;
+      animation: circle 1.5s ease-in-out infinite alternate;
     }
   }
   @keyframes circle {
