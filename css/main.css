@@ -32,3 +32,29 @@
 .container .section:nth-child(3){
     background: #000000;
 }
+
+
+
+  
+  .box {
+    width: 20px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid yellowgreen;
+    border-radius: 60px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    z-index: 2000;
+    .circle {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: yellowgreen;
+      inset: 0;
+      margin: auto;
+      animation: circle 2.5s ease-in-out infinite alternate;
+    }
+  }
+  
