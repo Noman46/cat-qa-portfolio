@@ -8,6 +8,54 @@
     left: 50%;
     top: 50%;
 }
+.tooltip {
+    position: relative;
+    display: inline-block;
+    top: 10%;
+    left: 39%;
+    animation: tooltipshow 5s ease-in-out;
+}
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: yellowgreen;
+    text-align: center;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.catcontent:hover .tooltiptext {
+    visibility: visible;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    width: 200px;
+    line-height: 1.6;
+    opacity: 1;
+    
+}
+@keyframes tooltipshow {
+    0%{
+       
+        transform: scaleX(0.8);
+        line-height: 1;
+        word-spacing: 1px;
+        opacity: .1;
+    }
+    50%{
+       
+        transform: scaleX(1.1);
+        line-height: 1.6;
+        word-spacing: 5px;
+        opacity: 1;
+    }
+}
+
 .cat{
     background-color: orange;
     height: 65px;
@@ -17,6 +65,7 @@
     bottom: 60px;
     right: 100px;
 }
+
 
 .ear{
     background-color: orange;
