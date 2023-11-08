@@ -45,11 +45,22 @@
     top: 85%;
     left: 47%;
     z-index: 500;
+
+    .scroll
+    {
+      position: absolute;
+      width: 2px;
+      height: 8px;
+      border-radius: 50%;
+      background: red;
+      top: 5px;
+      left: 9px;
+    }
     
     .circle {
       position: absolute;
-      width: 10px;
-      height: 10px;
+      width: 5px;
+      height: 5px;
       border-radius: 50%;
       background: yellowgreen;
       inset: 0;
@@ -59,10 +70,10 @@
   }
   @keyframes circle {
     0% {
-      transform: translateY(-10px);
+      transform: translateY(-3px);
     }
     100% {
-      transform: translateY(10px);
+      transform: translateY(8px);
       opacity: 0;
     }
   }
