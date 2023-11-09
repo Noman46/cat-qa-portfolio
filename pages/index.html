@@ -45,9 +45,9 @@
 
 
       <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
         <div class="overlay-content">
-          <a href="#">About</a>
+          <a href="blog.html">Blog</a>
           <a href="#">Services</a>
           <a href="#">Clients</a>
           <a href="#">Contact</a>
@@ -59,7 +59,7 @@
 
         <nav class = "mynavbar">
             <img src="../images/mylogowhite.png" class="logo">
-            <span class="burgermenue" onclick="openNav()">&#9776;</span>
+            <span class="burgermenue" onclick="toggleNavBar()">&#9776;</span>
         </nav>
 
         <div class="section" id="section1">
@@ -173,11 +173,15 @@
         // }
 
     const cursor = document.querySelector('.cursor');
-    function openNav() {
-        document.getElementById("myNav").style.width = "100%";
-    }
-    function closeNav() {
-        document.getElementById("myNav").style.width = "0%";
+    let toggelCount = 0;
+    function toggleNavBar() {
+        if(toggelCount%2 === 0){
+            document.getElementById("myNav").style.width = "100%";
+        }
+        else{
+            document.getElementById("myNav").style.width = "0%";
+        }
+        toggelCount = toggelCount+1
     }
 
     document.addEventListener('mousemove', (e) => {
