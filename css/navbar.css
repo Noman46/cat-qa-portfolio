@@ -9,7 +9,7 @@ nav{
     position: sticky;
     top: 0;  
     z-index: 1001;
-    background: #000000;  
+    background: #000000;
 }
 .scrolled{
     background-color: red
