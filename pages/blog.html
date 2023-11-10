@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CatQa || Blog</title>
     <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/insect.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script
         src="https://code.jquery.com/jquery-2.2.4.min.js"
@@ -14,16 +15,13 @@
 
 </head>
 <body style="background: #000;">
-    <div id="nav-placeholder">
-    </div>
+    <div id="nav-placeholder"></div>
+    <div class="cursor" id="insect"></div>
     <div class=".container-xxl">
 
         <div class="row">
             <div class="col-xxl-12 mt-3">
-                <nav class = "mynavbar">
-                    <img src="../images/mylogowhite.png" class="logo">
-                    <span class="burgermenue" onclick="toggleNavBar()" id="burgerButton">&#9776;</span>
-                </nav>
+                <div id="header"></div>
             </div>
 
             <!-- Left Empty Space -->
@@ -117,9 +115,20 @@
             }
             toggelCount = toggelCount+1
         }
-    
-        $(function(){
-            $("#nav-placeholder").load("navelements.html");
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
         });
+        $(function(){
+            $("#nav-placeholder").load("common/navelements.html");
+        });
+        $(function(){
+            $("#header").load("common/header.html");
+        });
+        $(function(){
+            $("#insect").load("common/insect.html");
+        });
+
     </script>
 </html>
