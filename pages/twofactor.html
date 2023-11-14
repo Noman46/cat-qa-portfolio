@@ -15,13 +15,14 @@
         <style>
             /* Add your custom styles here */
             #article-image {
-                width: 100%;
+                max-width: 1000px;
                 height: auto;
             }
-    
             #article-text {
                 margin-top: 20px;
                 color: whitesmoke;
+                text-align: justify;
+               
             }
     
             #video-container {
@@ -30,6 +31,9 @@
     
             #dummy-text {
                 margin-top: 20px;
+                color: whitesmoke;
+                text-align: justify;
+                
             }
         </style>
 
@@ -51,19 +55,19 @@
             <div class="col-xxl-12 mt-3">
                 <div id="header"></div>
             </div>
-            <div class="col-lg-2"></div> <!-- Empty left side for larger screens -->
+            <div class="col-xxl-3 col-lg-3 col-md-2 col-sm-1"></div> <!-- Empty left side for larger screens -->
     
-            <div class="col-lg-8 p-3">
+            <div class="col-xxl-6 col-lg-6 col-md-8 col-sm-10 p-3">
                 <!-- Image Div -->
                 <div id="article-image">
                     <img src="../images/spiderWeb.png" alt="Article Image" class="img-fluid">
                 </div>
     
                 <!-- Article Text -->
-                <div id="article-text">
+                <div id="article">
                     <h1>Your Article Title</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut mauris vel libero maximus euismod. Sed nec tortor vel mi fringilla congue non at odio. Vivamus hendrerit justo euismod felis rutrum, in ultricies mi hendrerit. Proin a nisl ac tortor sagittis dictum. Integer suscipit risus et purus scelerisque, at fermentum libero fermentum. Curabitur bibendum, arcu non tempor ultricies, sem ex finibus mi, at vulputate urna justo ut massa. Fusce consequat mauris id fermentum congue. Pellentesque nec ultricies sem, vitae bibendum orci. Nullam nec tellus a est fermentum eleifend id sit amet elit. Duis in dui eu orci ullamcorper ultricies a id enim. Aliquam a bibendum urna. Nullam cursus diam vitae suscipit suscipit. Vivamus vulputate augue ut justo facilisis dapibus. Sed eget ipsum id tellus facilisis imperdiet. Curabitur nec augue vitae ex finibus aliquet. In tristique diam id ligula dictum, a consequat dui semper.
+                    <p id="article-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut mauris vel libero maximus euismod. Sed nec tortor vel mi fringilla congue non at odio. Vivamus hendrerit justo euismod felis rutrum, in ultricies mi hendrerit. Proin a nisl ac tortor sagittis dictum. Integer suscipit risus et purus scelerisque, at fermentum libero fermentum. Curabitur bibendum, arcu non tempor ultricies, sem ex finibus mi, at vulputate urna justo ut massa. Fusce consequat mauris id fermentum congue. Pellentesque nec ultricies sem, vitae bibendum orci. Nullam nec tellus a est fermentum eleifend id sit amet elit. Duis in dui eu orci ullamcorper ultricies a id enim. Aliquam a bibendum urna. Nullam cursus diam vitae suscipit suscipit. Vivamus vulputate augue ut justo facilisis dapibus. Sed eget ipsum id tellus facilisis imperdiet. Curabitur nec augue vitae ex finibus aliquet. In tristique diam id ligula dictum, a consequat dui semper.In tristique diam id ligula dictum, a consequat dui semper.
                     </p>
     
                     <!-- Dummy Text Above Embedded Video -->
@@ -87,7 +91,7 @@
                 </div>
             </div>
     
-            <div class="col-lg-2"></div> <!-- Empty right side for larger screens -->
+            <div class="col-xxl-3 col-lg-3 col-md-2 col-sm-1"></div> <!-- Empty right side for larger screens -->
         </div>
     </div>
     
