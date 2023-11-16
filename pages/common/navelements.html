@@ -1,16 +1,26 @@
 <div id="myNav" class="overlay">
     <div class="overlay-content">
-      <a href="#">Home</a>
-      <a id="blogpage" href="#">Blog</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
+      <a id = "homepage" href="#" onclick="openNavPages('/index.html','homepage')">Home</a>
+      <a id = "blogpage" href="#" onclick="openNavPages('/pages/blog.html','blogpage')">Blog</a>
+      <a id = "cyclingpage" href="#" onclick="openNavPages('/pages/cycling.html','cyclingpage')">Cycling</a>
+      <a id = "cookingpage" href="#" onclick="openNavPages('/pages/cooking.html','cookingpage')">Cooking</a>
+      <a id = "drawingpage" href="#" onclick="openNavPages('/pages/drawing.html','drawingpage')">Drawing</a>
     </div>
 </div>
 <script>
-  let currentURL = window.location.origin;
-  let totalURL= currentURL+'/pages/blog.html'
-  var myAnchorTag = document.getElementById('blogpage');
-  myAnchorTag.href = totalURL
-  console.log("currentURl is ==== ", totalURL)
+  // let currentURL = window.location.origin;
+  // let totalURL= currentURL+'/pages/blog.html'
+  // var blogPageAnchor = document.getElementById('blogpage');
+  // var cyclingPageAnchor = document.getElementById('cyclingpage');
+  // blogPageAnchor.href = totalURL
+  // console.log("currentURl is ==== ", totalURL)
+  function openNavPages(pageURL,pageName){
+    let currentURL = window.location.origin;
+    let totalURL= currentURL+pageURL
+    var navAnchorTag = document.getElementById(pageName);
+    navAnchorTag.href = totalURL
+
+  }
 </script>
+
+<!-- //onclick function/ pass the id name to the function -->
