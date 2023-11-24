@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PZLN4NPQ');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,20 +21,22 @@
     <link rel="stylesheet" href="css/myBioStyle.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/insect.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
-    crossorigin="anonymous" 
-    referrerpolicy="no-referrer" />
-    <script
-        src="https://code.jquery.com/jquery-2.2.4.min.js"
-        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-        crossorigin="anonymous">
-    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous">
+        </script>
     <title>CatQa ||Home</title>
 </head>
+
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZLN4NPQ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="cursor" id="insect"></div>
-    
+
     <div class="wrapper">
         <div class="box">
             <div class="scroll"></div>
@@ -36,7 +49,7 @@
     <div class="container">
         <div id="header"></div>
         <div class="section" id="section1">
-                <div class="catcontent" id="cat"></div>
+            <div class="catcontent" id="cat"></div>
         </div>
         <div class="section" id="section2">
             <div class="spidercontent" id="spider"></div>
@@ -50,20 +63,20 @@
     <script>
         let toggelCount = 0;
         function toggleNavBar() {
-            if(toggelCount%2 === 0){
+            if (toggelCount % 2 === 0) {
                 document.getElementById("myNav").style.width = "100%";
             }
-            else{
+            else {
                 document.getElementById("myNav").style.width = "0%";
             }
-            toggelCount = toggelCount+1
+            toggelCount = toggelCount + 1
         }
         const cursor = document.querySelector('.cursor');
         document.addEventListener('mousemove', (e) => {
             cursor.style.left = e.clientX + 'px';
             cursor.style.top = e.clientY + 'px';
         });
-        $(function(){
+        $(function () {
             $("#nav-placeholder").load("pages/common/navelements.html");
             $("#header").load("pages/common/header.html");
             $("#insect").load("pages/common/insect.html");
@@ -74,4 +87,5 @@
     </script>
 
 </body>
+
 </html>
