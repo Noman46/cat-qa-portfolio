@@ -10,131 +10,144 @@
     position: relative;
     width: 545px;
     height: 545px;
-    background-color: #b99995
+    background-color: #ad908d;
+   
 }
 #h-1{
-    position: absolute;
+    position: absolute;;display: none;
     width: 10px;
     height: 100px;
     background-color: #000000;
     left: 415px;
     top: 104px;
+    display: none;
 }
 #h-2{
-    position: absolute;
+    position: absolute;;display: none;
     width: 12px;
     height: 134px;
     background-color: #000000;
     left: 403px;
     top: 83px;
+    display: none;
 }
 #h-3{
-  position: absolute;
+  position: absolute;;display: none;
   width: 11px;
   height: 155px;
   background-color: #000000;
   left: 392px;
   top: 71px;
+  display: none;
 }
 #h-4{
-  position: absolute;
+  position: absolute;;display: none;
   width: 11px;
   height: 112px;
   background-color: #000000;
   left:381px;
   top: 61px;
+  display: none;
 }
 #h-5{
-  position: absolute;
+  position: absolute;;display: none;
   width: 11px;
   height: 70px;
   background-color: #000000;
   left:370px;
   top: 61px;
+  display: none;
 }
 #h-6{
-  position: absolute;
+  position: absolute;;display: none;
   width: 60px;
   height: 40px;
   background-color: #000000;
   left:310px;
   top: 51px;
+  display: none;
 }
 #h-7{
-  position: absolute;
+  position: absolute;;display: none;
   width: 20px;
   height: 70px;
   background-color: #000000;
   left:350px;
   top: 61px;
+  display: none;
 }
 #h-8{
-  position: absolute;
+  position: absolute;;display: none;
   width: 10px;
   height: 10px;
-  background-color: #494646;
+  background-color: #393636;
   left: 340px;
   top: 110px;
+  display: none;
 }
 #h-9{
-  position: absolute;
+  position: absolute;;display: none;
   width: 10px;
   height: 10px;
-  background-color: #494646;
+  background-color: #393636;
   left: 330px;
   top: 91px;
+  display: none;
 }
 #h-10{
-  position: absolute;
+  position: absolute;;display: none;
   width: 10px;
   height: 10px;
-  background-color: #494646;
+  background-color: #393636;
   left: 350px;
   top: 91px;
   z-index: 1;
+  display: none;
 }
 #h-11{
-  position: absolute;
+  position: absolute;;display: none;
   width: 10px;
   height: 20px;
   background-color: #000000;
   left:340px;
-  top: 91px
+  top: 91px;
+  display: none;
 }
 #h-12{
-  position: absolute;
+  position: absolute;;display: none;
   width: 20px;
   height: 11px;
-  background-color: #494646;
+  background-color: #393636;
   left: 361px;
   top: 131px;
+  display: none;
 }
 #h-13{
-  position: absolute;
+  position: absolute;;display: none;
   width: 11px;
   height: 21px;
-  background-color: #494646;  
+  background-color: #393636;  
   left: 370px;
   top: 141px;
 }
 #h-14{
-  position: absolute;
+  position: absolute;;display: none;
   width: 10px;
   height: 13px;
-  background-color: #494646;  
+  background-color: #393636;  
   left: 415px;
   top: 204px;
 }
 #h-15{
-  position: absolute;
-  width: 10px;
-  height: 20px;
-  background-color: #494646;  
+  position: absolute;;display: none;
+  width: 11px;
+  height: 30px;
+  background-color: #393636;  
   left: 382px;
-  top: 198px;
+  top: 188px;
 }
 #h-16{
-  position: absolute;
+  position: absolute;;display: none;
   width: 80px;
   height: 40px;
   background-color: #000000;
@@ -142,23 +155,23 @@
   top: 51px;
 }
 #h-17{
-  position: absolute;
+  position: absolute;;display: none;
   width: 22px;
   height: 11px;
-  background-color: #494646;
+  background-color: #393636;
   left: 285px;
   top:80px;
 }
 #h-18{
-  position: absolute;
+  position: absolute;;display: none;
   width: 10px;
   height: 10px;
-  background-color: #494646;
+  background-color: #393636;
   left: 230px;
   top: 41px;
 }
 #h-19{
-  position: absolute;
+  position: absolute;;display: none;
   width: 61px;
   height: 10px;
   background-color: #000000;
@@ -166,23 +179,23 @@
   top: 41px;
 }
 #h-20{
-  position: absolute;
+  position: absolute;;display: none;
   width: 10px;
   height: 10px;
-  background-color: #494646;
+  background-color: #393636;
   left: 301px;
   top: 41px;
 }
 #h-21{
-  position: absolute;
+  position: absolute;;display: none;
   width: 10px;
   height: 10px;
-  background-color: #494646;
+  background-color: #393636;
   left: 220px;
   top: 51px;
 }
 #h-22{
-  position: absolute;
+  position: absolute;;display: none;
   width: 10px;
   height: 30px;
   background-color: #000000;
@@ -190,15 +203,15 @@
   top: 61px;
 }
 #h-23{
-  position: absolute;
+  position: absolute;;display: none;
   width: 10px;
   height: 10px;
-  background-color: #494646;
+  background-color: #393636;
   left: 210px;
   top: 71px;
 }
 #h-24{
-  position: absolute;
+  position: absolute;;display: none;
   width: 30px;
   height: 22px;
   background-color: #000000;
@@ -207,23 +220,23 @@
   z-index: 1;
 }
 #h-25{
-  position: absolute;
+  position: absolute;;display: none;
   width: 12px;
   height: 30px;
-  background-color: #494646;
+  background-color: #393636;
   left: 198px;
   top: 51px;
 }
 #h-26{
-  position: absolute;
+  position: absolute;;display: none;
   width: 11px;
   height: 30px;
-  background-color: #494646;
+  background-color: #393636;
   left: 187px;
   top: 61px;
 }
 #h-27{
-  position: absolute;
+  position: absolute;;display: none;
   width: 45px;
   height: 30px;
   background-color: #000000;
@@ -231,31 +244,31 @@
   top: 91px;
 }
 #h-28{
-  position: absolute;
+  position: absolute;;display: none;
   width: 10px;
   height: 20px;
-  background-color: #494646;
+  background-color: #393636;
   left: 169px;
   top: 91px;
 }
 #h-29{
-  position: absolute;
+  position: absolute;;display: none;
   width: 20px;
   height: 12px;
-  background-color: #494646;
+  background-color: #393636;
   left: 220px;
   top: 91px;
 }
 #h-30{
-  position: absolute;
+  position: absolute;;display: none;
   width: 20px;
   height: 10px;
-  background-color: #494646;
+  background-color: #393636;
   left: 209px;
   top: 103px;
 }
 #h-31{
-  position: absolute;
+  position: absolute;;display: none;
   width: 20px;
   height: 20px;
   background-color: #000000;
@@ -263,31 +276,31 @@
   top: 121px;
 }
 #h-32{
-  position: absolute;
+  position: absolute;;display: none;
   width: 10px;
   height: 10px;
-  background-color: #494646;
+  background-color: #393636;
   left: 190px;
   top: 131px;
 }
 #h-33{
-  position: absolute;
+  position: absolute;;display: none;
   width: 20px;
   height: 20px;
-  background-color: #494646;
+  background-color: #393636;
   left: 200px;
   top: 121px;
 }
 #h-34{
-  position: absolute;
+  position: absolute;;display: none;
   width: 11px;
   height: 10px;
-  background-color: #494646;
+  background-color: #393636;
   left: 209px;
   top: 113px;
 }
 #h-35{
-  position: absolute;
+  position: absolute;;display: none;
   width: 20px;
   height: 40px;
   background-color: #000000;
@@ -295,15 +308,15 @@
   top: 141px;
 }
 #h-36{
-  position: absolute;
+  position: absolute;;display: none;
   width: 20px;
   height: 40px;
-  background-color: #494646;
+  background-color: #393636;
   left: 190px;
   top: 141px;
 }
 #h-37{
-  position: absolute;
+  position: absolute;;display: none;
   width: 10px;
   height: 10px;
   background-color: #000000;
@@ -311,39 +324,39 @@
   top: 141px;
 }
 #h-38{
-  position: absolute;
+  position: absolute;;display: none;
   width: 10px;
   height: 10px;
-  background-color: #494646;
+  background-color: #393636;
   left: 170px;
   top: 181px;
 }
 #h-39{
-  position: absolute;
+  position: absolute;;display: none;
   width: 10px;
   height: 10px;
-  background-color: #494646;
+  background-color: #393636;
   left: 190px;
   top: 181px;
 }
 #h-40{
-  position: absolute;
+  position: absolute;;display: none;
   width: 20px;
   height: 10px;
-  background-color: #494646;
+  background-color: #393636;
   left: 180px;
   top: 191px;
 }
 #h-41{
-  position: absolute;
+  position: absolute;;display: none;
   width: 30px;
   height: 20px;
-  background-color: #494646;
+  background-color: #393636;
   left: 180px;
   top: 201px;
 }
 #h-42{
-  position: absolute;
+  position: absolute;;display: none;
   width: 11px;
   height: 10px;
   background-color: #000000;
@@ -351,15 +364,15 @@
   top: 201px;
 }
 #h-43{
-  position: absolute;
+  position: absolute;;display: none;
   width: 10px;
   height: 40px;
-  background-color: #494646;
+  background-color: #393636;
   left: 180px;
   top: 221px;
 }
 #h-44{
-  position: absolute;
+  position: absolute;;display: none;
   width: 10px;
   height: 10px;
   background-color: #000000;
@@ -367,39 +380,39 @@
   top: 221px;
 }
 #h-45{
-  position: absolute;
+  position: absolute;;display: none;
   width: 20px;
   height: 20px;
-  background-color: #494646;
+  background-color: #393636;
   left: 180px;
   top: 261px;
 }
 #h-46{
-  position: absolute;
+  position: absolute;;display: none;
   width: 10px;
   height: 32px;
-  background-color: #494646;
+  background-color: #393636;
   left: 190px;
   top: 281px;
 }
 #h-47{
-  position: absolute;
+  position: absolute;;display: none;
   width: 20px;
   height: 20px;
-  background-color: #494646;
+  background-color: #393636;
   left: 200px;
   top: 303px;
 }
 #h-48{
-  position: absolute;
+  position: absolute;;display: none;
   width: 20px;
   height: 11px;
-  background-color: #494646;
+  background-color: #393636;
   left: 210px;
   top: 323px;
 }
 #h-49{
-  position: absolute;
+  position: absolute;;display: none;
   width: 30px;
   height: 10px;
   background-color: #000000;
@@ -408,31 +421,31 @@
 }
 
 #h-50{
-  position: absolute;
+  position: absolute;;display: none;
   width: 70px;
   height: 10px;
-  background-color: #494646;
+  background-color: #393636;
   left: 230px;
   top: 334px;
 }
 #h-51{
-  position: absolute;
+  position: absolute;;display: none;
   width: 90px;
   height: 10px;
-  background-color: #494646;
+  background-color: #393636;
   left: 310px;
   top: 334px;
 }
 #h-52{
-  position: absolute;
+  position: absolute;;display: none;
   width: 40px;
   height: 10px;
-  background-color: #494646;
+  background-color: #393636;
   left: 340px;
   top: 324px;
 }
 #h-53{
-  position: absolute;
+  position: absolute;;display: none;
   width: 10px;
   height: 10px;
   background-color: #000000;
@@ -440,19 +453,313 @@
   top: 324px;
 }
 #h-54{
-  position: absolute;
+  position: absolute;;display: none;
   width: 20px;
   height: 10px;
-  background-color: #494646;
+  background-color: #393636;
   left: 370px;
   top: 314px;
 }
-
 #h-55{
-  position: absolute;
+  position: absolute;;display: none;
   width: 20px;
   height: 10px;
-  background-color: white;
+  background-color: rgb(247, 238, 238);
   left: 392px;
   top: 246px;
+}
+#h-56{
+  position: absolute;;display: none;
+  width: 10px;
+  height: 10px;
+  background-color: #393636;
+  left: 210px;
+  top: 171px;
+}
+#h-57{
+  position: absolute;;display: none;
+  width: 20px;
+  height: 30px;
+  background-color: #393636;
+  left: 220px;
+  top: 171px;
+}
+#h-58{
+  position: absolute;;display: none;
+  width: 20px;
+  height: 30px;
+  background-color: #393636;
+  left: 240px;
+  top: 181px;
+}
+#h-59{
+  position: absolute;;display: none;
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+  left: 220px;
+  top: 171px;
+}
+#h-60{
+  position: absolute;;display: none;
+  width: 30px;
+  height: 10px;
+  background-color: #000000;
+  left: 250px;
+  top: 191px;
+  z-index: 1;
+}
+#h-61{
+  position: absolute;;display: none;
+  width: 10px;
+  height: 50px;
+  background-color: #393636;
+  left: 270px;
+  top: 181px;
+}
+#h-62{
+  position: absolute;;display: none;
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+  left: 270px;
+  top: 211px;
+}
+#h-63{
+  position: absolute;;display: none;
+  width: 50px;
+  height: 10px;
+  background-color: #393636;
+  left: 280px;
+  top: 231px;
+  z-index: 2;
+}
+#h-64{
+  position: absolute;;display: none;
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+  left: 290px;
+  top: 231px;
+  z-index: 2;
+
+}
+#h-65{
+  position: absolute;;display: none;
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+  left: 310px;
+  top: 231px;
+  z-index: 2;
+}
+#h-66{
+  position: absolute;;display: none;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(247, 238, 238);
+  left: 270px;
+  top: 241px;
+}
+#h-67{
+  position: absolute;;display: none;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(247, 238, 238);
+  left: 280px;
+  top: 251px;
+}
+#h-68{
+  position: absolute;;display: none;
+  width: 40px;
+  height: 20px;
+  background-color: rgb(247, 238, 238);
+  left: 300px;
+  top: 231px;
+  z-index: 1;
+}
+#h-69{
+  position: absolute;;display: none;
+  width: 30px;
+  height: 10px;
+  background-color: rgb(247, 238, 238);
+  left: 310px;
+  top: 251px;
+
+}
+#h-70{
+  position: absolute;;display: none;
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+  left: 280px;
+  top: 181px;
+}
+#h-71{
+  position: absolute;;display: none;
+  width: 30px;
+  height: 20px;
+  background-color: #393636;
+  left: 290px;
+  top: 171px;
+}
+#h-72{
+  position: absolute;;display: none;
+  width: 30px;
+  height: 10px;
+  background-color: #000000;
+  left: 320px;
+  top: 181px;
+}
+#h-73{
+  position: absolute;;display: none;
+  width: 10px;
+  height: 10px;
+  background-color: #393636;
+  left: 350px;
+  top: 181px;
+}
+#h-74{
+  position: absolute;;display: none;
+  width: 51px;
+  height: 10px;
+  background-color: #000000;
+  left: 330px;
+  top: 191px;
+}
+#h-75{
+  position: absolute;;display: none;
+  width: 10px;
+  height: 20px;
+  background-color: #000000;
+  left: 330px;
+  top: 201px;
+}
+#h-76{
+  position: absolute;;display: none;
+  width: 10px;
+  height: 20px;
+  background-color: #393636;
+  left: 320px;
+  top: 191px;
+}
+#h-77{
+  position: absolute;;display: none;
+  width: 10px;
+  height: 10px;
+  background-color: #393636;
+  left: 310px;
+  top: 201px;
+}
+#h-78{
+  position: absolute;;display: none;
+  width: 10px;
+  height: 10px;
+  background-color: #393636;
+  left: 340px;
+  top: 201px;
+}
+#h-79{
+  position: absolute;;display: none;
+  width: 10px;
+  height: 20px;
+  background-color: #000000;
+  left: 240px;
+  top: 211px;
+}
+#h-80{
+  position: absolute;;display: none;
+  width: 10px;
+  height: 30px;
+  background-color: #393636;
+  left: 240px;
+  top: 231px;
+}
+#h-81{
+  position: absolute;;display: none;
+  width: 10px;
+  height: 10px;
+  background-color: #393636;
+  left: 230px;
+  top: 251px;
+}
+#h-82{
+  position: absolute;;display: none;
+  width: 10px;
+  height: 10px;
+  background-color: #393636;
+  left: 220px;
+  top: 231px;
+}
+#h-83{
+  position: absolute;;display: none;
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+  left: 210px;
+  top: 231px;
+}
+#h-84{
+  position: absolute;;display: none;
+  width: 30px;
+  height: 10px;
+  background-color: #393636;
+  left: 220px;
+  top: 271px;
+}
+#h-85{
+  position: absolute;;display: none;
+  width: 10px;
+  height: 10px;
+  background-color: #393636;
+  left: 230px;
+  top: 281px;
+}
+#h-86{
+  position: absolute;;display: none;
+  width: 30px;
+  height: 10px;
+  background-color: #393636;
+  left: 240px;
+  top: 302px;
+}
+#h-87{
+  position: absolute;;display: none;
+  width: 70px;
+  height: 10px;
+  background-color: rgb(247, 238, 238);
+  left: 250px;
+  top: 161px;
+}
+#h-88{
+  position: absolute;;display: none;
+  width: 20px;
+  height: 10px;
+  background-color: rgb(247, 238, 238);
+  left: 290px;
+  top: 151px;
+}
+#h-89{
+  position: absolute;;display: none;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(247, 238, 238);
+  left: 300px;
+  top: 141px;
+}
+#h-90{
+  position: absolute;;display: none;
+  width: 20px;
+  height: 10px;
+  background-color: rgb(247, 238, 238);
+  left: 290px;
+  top: 131px;
+}
+#h-91{
+  position: absolute;;display: none;
+  width: 30px;
+  height: 10px;
+  background-color: #393636;
+  left: 240px;
+  top: 31px;
 }
