@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/mysketch.css">
+    <link rel="stylesheet" href="../../css/mysketch.css">
     <title>Document</title>
 </head>
 
@@ -224,7 +224,7 @@
 
 
 
-                <div><button type="button" onclick="showDivsOneByOne();">CLICK</button></div>
+                <div id="show-btn"><button type="button" onclick="showDivsOneByOne();">CLICK</button></div>
             </div>
         </div>
 
@@ -232,10 +232,12 @@
 
     <script>
         const divs = document.querySelectorAll(`[id^="h-"]`);
+        const showBtn = document.getElementById('show-btn');
 
 
         function showDivsOneByOne() {
 
+            showBtn.style.display = 'none';
             let index = 0;
 
             function showNextDiv() {
