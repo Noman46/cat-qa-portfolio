@@ -27,12 +27,10 @@ body{
 
 }
 #show-btn {
-  position: absolute;
+
   display: flex;
-  justify-content: center;
+  justify-content: center; /* horizontally centers content */
   align-items: center;
-  left: 50%;
-  top: 50%;
 }
 #h-2 {
   position: absolute;
