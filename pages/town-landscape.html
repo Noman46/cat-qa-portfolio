@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/town-lanscape.css">
     <title>town-landscape</title>
 </head>
+
 <body>
     <div class="container">
-        <div class="base"></div>
+        <div id="ls-base"></div>
         <div class="landscape">
-            <div id="tree1">
+            <div id="ls-tree1">
                 <div id="ls-tree-stand-1"></div>
                 <div id="ls-tree-stand-2"></div>
                 <div id="ls-tree-stand-3"></div>
@@ -18,7 +20,7 @@
                 <div id="ls-tree-leaf-2"></div>
                 <div id="ls-tree-leaf-3"></div>
             </div>
-            <div id="tree2">
+            <div id="ls-tree2">
                 <div id="ls-tree-stand-1"></div>
                 <div id="ls-tree-stand-2"></div>
                 <div id="ls-tree-stand-3"></div>
@@ -26,7 +28,7 @@
                 <div id="ls-tree-leaf-2"></div>
                 <div id="ls-tree-leaf-3"></div>
             </div>
-            <div id="tree3">
+            <div id="ls-tree3">
                 <div id="ls-tree-stand-1"></div>
                 <div id="ls-tree-stand-2"></div>
                 <div id="ls-tree-stand-3"></div>
@@ -34,7 +36,7 @@
                 <div id="ls-tree-leaf-2"></div>
                 <div id="ls-tree-leaf-3"></div>
             </div>
-            <div id="tree4">
+            <div id="ls-tree4">
                 <div id="ls-tree-stand-1"></div>
                 <div id="ls-tree-stand-2"></div>
                 <div id="ls-tree-stand-3"></div>
@@ -42,7 +44,7 @@
                 <div id="ls-tree-leaf-2"></div>
                 <div id="ls-tree-leaf-3"></div>
             </div>
-            <div id="tree5">
+            <div id="ls-tree5">
                 <div id="ls-tree-stand-1"></div>
                 <div id="ls-tree-stand-2"></div>
                 <div id="ls-tree-stand-3"></div>
@@ -50,9 +52,43 @@
                 <div id="ls-tree-leaf-2"></div>
                 <div id="ls-tree-leaf-3"></div>
             </div>
+            <div id="ls-b-1"></div>
+            <div id="ls-b1-p1"></div>
+            <div id="ls-b-2"></div>
+            <div id="ls-b-3"></div>
+            <div id="ls-b-4"></div>
+            <div id="ls-b-5"></div>
+            <div id="ls-b5-p1"></div>
+            <div id="ls-b-6"></div>
+            <div id="ls-b6-p1"></div>
+            <div id="ls-b6-p2"></div>
+            <div id="ls-b-7"></div>
+            <div id="ls-b7-1"></div>
+            <div id="ls-b7-2"></div>
 
-            
+            <div id="show-btn"><button type="button" onclick="showDivsOneByOne();">See The Drawing</button></div>
+
         </div>
     </div>
+    <script>
+        const divs = document.querySelectorAll(`[id^="ls"]`);
+        const showBtn = document.getElementById('show-btn');
+        function showDivsOneByOne() {
+            showBtn.style.display = 'none';
+            console.log(divs)
+            let index = 0;
+
+            function showNextDiv() {
+                if (index < divs.length) {
+                    divs[index].style.display = 'block';
+                    index++;
+                    setTimeout(showNextDiv, 100); // Change the timing (in milliseconds) between showing divs
+                }
+            }
+            showNextDiv();
+        }
+
+    </script>
 </body>
+
 </html>
