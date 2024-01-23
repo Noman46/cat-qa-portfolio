@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        canvas {
+            border: 1px solid #000;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+    <title>Water and Fire Drops Game</title>
+</head>
+<body>
+    <canvas id="gameCanvas" width="700" height="700"></canvas>
+
+    <script>
+        const canvas = document.getElementById("gameCanvas");
+        const ctx = canvas.getContext("2d");
+
+        class Particle {
+            constructor(x, y, radius, color, type) {
+                this.x = x;
+                this.y = y;
+                this.radius = radius;
+                this.color = color;
+                this.type = type; // 'water' or 'fire'
+                this.dx = (Math.random() - 0.5) * 2;
+                this.dy = (Math.random() - 0.5) * 2;
+            }
+
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fillStyle = this.color;
+                ctx.fill();
+                ctx.closePath();
+            }
+
+            update() {
+                this.x += this.dx;
+                this.y += this.dy;
+
+                if (this.x - this.radius <= 0 || this.x + this.radius >= canvas.width) {
+                    this.dx = -this.dx;
+                }
+
+                if (this.y - this.radius <= 0 || this.y + this.radius >= canvas.height) {
+                    this.dy = -this.dy;
+                }
+            }
+        }
+
+        const particles = [];
+
+        // Create water droplets
+        for (let i = 0; i < 5; i++) {
+            const radius = 10;
+            const x = Math.random() * (canvas.width - 2 * radius) + radius;
+            const y = Math.random() * (canvas.height - 2 * radius) + radius;
+            const color = "blue";
+            const type = 'water';
+            particles.push(new Particle(x, y, radius, color, type));
+        }
+
+        // Create fire drops
+        for (let i = 0; i < 5; i++) {
+            const radius = 8;
+            const x = Math.random() * (canvas.width - 2 * radius) + radius;
+            const y = Math.random() * (canvas.height - 2 * radius) + radius;
+            const color = "red";
+            const type = 'fire';
+            particles.push(new Particle(x, y, radius, color, type));
+        }
+
+        function checkCollision(waterParticle, fireParticle) {
+            const distance = Math.sqrt(
+                Math.pow(waterParticle.x - fireParticle.x, 2) +
+                Math.pow(waterParticle.y - fireParticle.y, 2)
+            );
+
+            return distance < waterParticle.radius + fireParticle.radius;
+        }
+
+        function gameLoop() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            particles.forEach((particle, index) => {
+                particle.update();
+                particle.draw();
+
+                // Check for collisions with other particles
+                for (let i = 0; i < particles.length; i++) {
+                    if (i !== index) {
+                        const otherParticle = particles[i];
+
+                        if (particle.type === 'water' && otherParticle.type === 'fire' && checkCollision(particle, otherParticle)) {
+                            // Transform water particle to fire particle
+                            particle.type = 'fire';
+                            particle.color = 'red';
+                            particle.radius = 8;
+                        }
+                    }
+                }
+            });
+
+            requestAnimationFrame(gameLoop);
+        }
+
+        gameLoop();
+    </script>
+</body>
+</html>
