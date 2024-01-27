@@ -14,10 +14,12 @@
 </head>
 <body>
     <canvas id="gameCanvas" width="700" height="700"></canvas>
+    <button id="controlButton">Stop/Reset Animation</button>
 
     <script>
         const canvas = document.getElementById("gameCanvas");
         const ctx = canvas.getContext("2d");
+        const controlButton = document.getElementById("controlButton");
 
         class Particle {
             constructor(x, y, radius, color, type) {
@@ -74,6 +76,8 @@
             particles.push(new Particle(x, y, radius, color, type));
         }
 
+        let animationId;
+
         function checkCollision(waterParticle, fireParticle) {
             const distance = Math.sqrt(
                 Math.pow(waterParticle.x - fireParticle.x, 2) +
@@ -105,9 +109,24 @@
                 }
             });
 
-            requestAnimationFrame(gameLoop);
+            animationId = requestAnimationFrame(gameLoop);
         }
 
+        function stopAnimation() {
+            cancelAnimationFrame(animationId);
+        }
+
+        controlButton.addEventListener("click", function () {
+            if (animationId) {
+                // Animation is running, stop it
+                stopAnimation();
+            } else {
+                // Animation is stopped, restart it
+                gameLoop();
+            }
+        });
+
+        // Start the initial animation
         gameLoop();
     </script>
 </body>

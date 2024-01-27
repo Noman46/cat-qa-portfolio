@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        canvas {
+            border: 1px solid #000;
+            display: block;
+            margin: 20px auto;
+        }
+
+        #start {
+            display: inline;
+        }
+    </style>
+    <title>Water-Fire_leaves</title>
+</head>
+
+<body>
+    <canvas id="gameCanvas" width="700" height="700"></canvas>
+    <button id="start">Start</button>
+    <button id="pause">pause</button>
+    <button id="reset">reset</button>
+
+    <script>
+        const canvas = document.getElementById("gameCanvas");
+        const startButton = document.getElementById("start");
+        const pauseButton = document.getElementById("pause");
+        const resetButton = document.getElementById("reset");
+        const ctx = canvas.getContext("2d");
+        const particles = [];
+
+        class Particle {
+            constructor(x, y, radius, color, type) {
+                this.x = x;
+                this.y = y;
+                this.radius = radius;
+                this.color = color;
+                this.type = type; // 'water' or 'fire' or 'leaves'
+                this.dx = (Math.random() - 0.5) * 2;
+                this.dy = (Math.random() - 0.5) * 2;
+            }
+
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+                ctx.fillStyle = this.color;
+                ctx.fill();
+                ctx.closePath();
+            }
+            update() {
+                this.x += this.dx;
+                this.y += this.dy;
+
+                if (this.x - this.radius <= 0 || this.x + this.radius >= canvas.width) {
+                    this.dx = -this.dx;
+                }
+
+                if (this.y - this.radius <= 0 || this.y + this.radius >= canvas.height) {
+                    this.dy = -this.dy;
+                }
+            }
+        }
+
+
+        // Create water droplets
+        for (let i = 0; i < 15; i++) {
+            const radius = 10;
+            const x = Math.random() * (canvas.width - 2 * radius) + radius;
+            const y = Math.random() * (canvas.height - 2 * radius) + radius;
+            const color = "blue";
+            const type = 'water';
+            particles.push(new Particle(x, y, radius, color, type));
+
+        }
+        // Create Fire droplets
+        for (let i = 0; i < 15; i++) {
+            const radius = 10;
+            const x = Math.random() * (canvas.width - 2 * radius) + radius;
+            const y = Math.random() * (canvas.height - 2 * radius) + radius;
+            const color = "red";
+            const type = 'fire';
+            particles.push(new Particle(x, y, radius, color, type));
+        }
+        // Create Leaves droplets
+        for (let i = 0; i < 15; i++) {
+            const radius = 10;
+            const x = Math.random() * (canvas.width - 2 * radius) + radius;
+            const y = Math.random() * (canvas.height - 2 * radius) + radius;
+            const color = "green";
+            const type = 'leaves';
+            particles.push(new Particle(x, y, radius, color, type));
+        }
+        function checkCollision(waterParticle, fireParticle) {
+            const distance = Math.sqrt(
+                Math.pow(waterParticle.x - fireParticle.x, 2) +
+                Math.pow(waterParticle.y - fireParticle.y, 2)
+            );
+
+            return distance < waterParticle.radius + fireParticle.radius;
+
+        }
+
+        let water = 15;
+        let fire = 15;
+        let leaves = 15;
+        let animationId;
+        let animationBreaker = 0;
+
+        function gameLoop() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            particles.forEach((particle, index) => {
+                particle.update()
+                particle.draw();
+                // Check for collisions with other particles
+                for (let i = 0; i < particles.length; i++) {
+                    if (i !== index) {
+                        const otherParticle = particles[i];
+
+                        if (particle.type === 'fire' && otherParticle.type === 'water' && checkCollision(particle, otherParticle)) {
+                            // Transform water particle to fire particle
+                            particle.type = 'water';
+                            particle.color = 'blue';
+                            water = water + 1;
+                            fire = fire - 1;
+
+                        }
+                        if (particle.type === 'leaves' && otherParticle.type === 'fire' && checkCollision(particle, otherParticle)) {
+                            // Transform water particle to fire particle
+                            particle.type = 'fire';
+                            particle.color = 'red';
+                            fire = fire + 1;
+                            leaves = leaves - 1
+                        }
+                        if (particle.type === 'water' && otherParticle.type === 'leaves' && checkCollision(particle, otherParticle)) {
+                            // Transform water particle to fire particle
+                            particle.type = 'leaves';
+                            particle.color = 'green';
+                            leaves = leaves + 1;
+                            water = water - 1;
+                        }
+                    }
+                }
+                if (water === 45 || leaves === 45 || fire === 45) {
+                    console.log('Particle type ', particle.type, 'Winer', animationId)
+                    animationBreaker = 45
+                    winner = particle.type
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    ctx.fillStyle = 'red';
+                ctx.font = 'bold 36px sans-serif';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText('The Winner Is:'+particle.type,canvas.width / 2, canvas.height /2)
+
+
+                }
+            });
+
+            if (animationBreaker < 45) {
+                animationId = requestAnimationFrame(gameLoop);
+
+            }
+
+        }
+        function startGame () {
+            gameLoop();
+        }
+        function pauseGame () {
+            cancelAnimationFrame(animationId);
+        }
+        function resetGame () {
+            cancelAnimationFrame(animationId);
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+        }
+
+        startButton.addEventListener("click", function () {
+            startGame()
+        });
+        pauseButton.addEventListener("click", function () {
+            pauseGame()
+        });
+        resetButton.addEventListener("click", function () {
+            resetGame()
+        });
+    </script>
+</body>
+
+</html>
