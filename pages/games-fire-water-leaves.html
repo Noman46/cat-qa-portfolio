@@ -9,26 +9,83 @@
             border: 1px solid #000;
             display: block;
             margin: 20px auto;
+            border: 2px solid black;
         }
 
         #start {
-            display: inline;
+            display: inline-block;
+            position: fixed;
+            left: 300px;
+            width: 70px;
+            background-color: green;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            border: 2px solid black;
+        }
+
+        #pause {
+            display: inline-block;
+            position: fixed;
+            left: 380px;
+            width: 70px;
+            background-color: yellow;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            border: 2px solid black;
+        }
+
+        #reset {
+            display: inline-block;
+            position: fixed;
+            left: 460px;
+            width: 70px;
+            background-color: red;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            border: 2px solid black;
+        }
+
+        #qa {
+            display: inline-block;
+            position: fixed;
+            left: 540px;
+        }
+
+        #dev {
+            display: inline-block;
+            position: fixed;
+            left: 670px;
         }
     </style>
-    <title>Water-Fire_leaves</title>
+    <title>BUGorFEATURE</title>
 </head>
 
 <body>
     <canvas id="gameCanvas" width="700" height="700"></canvas>
-    <button id="start">Start</button>
-    <button id="pause">pause</button>
-    <button id="reset">reset</button>
+    <input type="button" id="start" value="Start">
+    <button id="pause">Pause</button>
+    <button id="reset">Reset</button>
+    <div id="qa">
+        <label for="qa-text"><b>QA:</label>
+        <input type="text" id="qaText" maxlength="6" size="6">
+    </div>
+    <div id="dev">
+        <label for="dev-text"><b>DEV:</label>
+        <input type="text" id="devText" maxlength="6" size="6">
+    </div>
+
+
 
     <script>
         const canvas = document.getElementById("gameCanvas");
         const startButton = document.getElementById("start");
         const pauseButton = document.getElementById("pause");
         const resetButton = document.getElementById("reset");
+        const qaTextValue = document.getElementById("qaText");
+        const devTextValue = document.getElementById("devText");
         const ctx = canvas.getContext("2d");
         const particles = [];
 
@@ -145,17 +202,17 @@
                     }
                 }
                 if (water === 45 || leaves === 45 || fire === 45) {
-                    console.log('Particle type ', particle.type, 'Winer', animationId)
+                    let winner;
                     animationBreaker = 45
-                    winner = particle.type
-                    ctx.clearRect(0, 0, canvas.width, canvas.height);
-                    ctx.fillStyle = 'red';
-                ctx.font = 'bold 36px sans-serif';
-                ctx.textAlign = 'center';
-                ctx.textBaseline = 'middle';
-                ctx.fillText('The Winner Is:'+particle.type,canvas.width / 2, canvas.height /2)
-
-
+                    if (particle.type === qaTextValue.value.toLowerCase()) {
+                        winner = "The Winner Is:QA, It is a BUG idiot"
+                    } else if (particle.type === devTextValue.value.toLowerCase()) {
+                        winner = " The Winner Is: DEV, It is a feature idiot"
+                    }
+                    else {
+                        winner = "The Winner Is: PM, Let's have a meeting"
+                    }
+                    gameResult(winner)
                 }
             });
 
@@ -165,16 +222,30 @@
             }
 
         }
-        function startGame () {
-            gameLoop();
+        function gameResult(winner) {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = 'red';
+            ctx.font = 'bold 36px sans-serif';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText(winner, canvas.width / 2, canvas.height / 2)
         }
-        function pauseGame () {
+        function startGame() {
+            if (qaTextValue.value.length != 0 && devTextValue.value.length != 0 ) {
+                gameLoop();
+            } else {
+                gameResult("Please Put QA and DEV Choice")
+            }
+
+            
+        }
+        function pauseGame() {
             cancelAnimationFrame(animationId);
         }
-        function resetGame () {
+        function resetGame() {
             cancelAnimationFrame(animationId);
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            
+
         }
 
         startButton.addEventListener("click", function () {
@@ -184,7 +255,7 @@
             pauseGame()
         });
         resetButton.addEventListener("click", function () {
-            resetGame()
+            location.reload()
         });
     </script>
 </body>
