@@ -176,3 +176,15 @@ pauseButton.addEventListener("click", function () {
 resetButton.addEventListener("click", function () {
     location.reload()
 });
+
+
+function openRulesModal() {
+    alert('Team Setup:QA and Dev each have 15 balls: blue for water, red for fire,'+
+     'and green for leaves.Objective:QA and Dev take turns selecting a ball.'+
+     'QA win marks it as a bug; Dev win marks it as a feature.'+
+     'A tie results in the Project Manager winning.Elemental' +
+     'Interactions:Water ball touching a fire ball turns the fire ball into water.'+
+     'Water ball touching a leaves ball turns the water into leaves.'+
+     'Leaves ball touching a fire ball turns the leaves into fire.'+
+     'Game Progression:The game continues until one type of ball dominates.')
+}
