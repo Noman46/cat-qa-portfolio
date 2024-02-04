@@ -2,84 +2,66 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/bugorfeature.css">
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PZLN4NPQ');</script>
+  <!-- End Google Tag Manager -->
 
-    <title>CatQa ||bug-or-feature</title>
-    <style>
-
-        #rulesModal {
-          display: none;
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(0, 0, 0, 0.5);
-        }
-    
-        .modal-content {
-          background-color: #fff;
-          padding: 20px;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: left;
-        }
-    
-        #closeBtn {
-          cursor: pointer;
-          color: #555;
-          float: right;
-          font-size: 20px;
-          font-weight: bold;
-        }
-    
-        #closeBtn:hover {
-          color: #000;
-        }
-      </style>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/bugorfeature.css">
+  <title>CatQa ||bug-or-feature</title>
 </head>
 
 <body>
-    <canvas id="gameCanvas" width="700" height="700"></canvas>
-    <div class="buttons">
-        <input type="button" id="start" value="Start">
-        <button id="pause">Pause</button>
-        <button id="reset">Reset</button>
-        <button onclick="openRulesModal()">Rules</button>
-        <div id="qa">
-            <label for="qa-text"><b>QA:</label>
-            <input type="text" id="qaText" maxlength="6" size="6">
-        </div>
-        <div id="dev">
-            <label for="dev-text"><b>DEV:</label>
-            <input type="text" id="devText" maxlength="6" size="6">
-        </div>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZLN4NPQ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <canvas id="gameCanvas" width="700" height="700"></canvas>
+
+  <div class="buttons">
+    <input type="button" id="start" value="Start">
+    <button id="pause">Pause</button>
+    <button id="reset">Reset</button>
+    <button onclick="openRulesModal()">Rules</button>
+    <div id="qa">
+      <label for="qa-text"><b>QA:</label>
+      <input type="text" id="qaText" maxlength="6" size="6">
     </div>
-    <!-- For Future -->
-    <!-- <div id="ballNumber">
+    <div id="dev">
+      <label for="dev-text"><b>DEV:</label>
+      <input type="text" id="devText" maxlength="6" size="6">
+    </div>
+  </div>
+  <!-- For Future -->
+  <!-- <div id="ballNumber">
         <label for="numberInput">Between 5 and 30:</label>
         <input type="number" id="numberInput" oninput="validateNumber()" required>
 
         <p id="error-message" style="color: red;"></p>
     </div> -->
 
-    <div id="rulesModal">
-      <div class="modal-content">
-        <span id="closeBtn" onclick="closeRulesModal()">&times;</span>
-       
-      </div>
+  <div id="rulesModal">
+    <div class="modal-content">
+      <span id="closeBtn" onclick="closeRulesModal()">&times;</span>
+
     </div>
+  </div>
 
 
 
 
-    <script src="../../js/bug-or-feature.js"></script>
+
+
+  <script src="../../js/bug-or-feature.js"></script>
 
 </body>
-
 </html>
