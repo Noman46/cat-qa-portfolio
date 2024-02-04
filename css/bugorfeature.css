@@ -1,0 +1,85 @@
+canvas {
+    border: 1px solid #000;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid black;
+    width: 800px;
+    height: 600px;
+
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    left: 560px;
+}
+
+#ballNumber {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    left: 1160px;
+}
+
+#numberInput {
+    width: 40px;
+    height: 15px;
+}
+
+#start {
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+#pause {
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+#reset {
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+
+
+
+@media only screen and ((min-width: 200px) and (max-width: 1024px)) {
+    canvas {
+        width: 95vw;
+        /* Make the canvas fill the width of the screen */
+        height: calc(95vw / 1.2)
+            /* Maintain the aspect ratio */
+    }
+}
+
+@media only screen and ((min-width: 200px) and (max-width: 1024px)) {
+    .buttons {
+        flex-direction: column;
+        align-items: flex-start;
+        left: 20px;
+    }
+    #ballNumber {
+        flex-direction: column;
+        align-items: flex-start;
+        left: 20px;
+        top: 550px;
+    }
+}
+
+@media only screen and ((min-width: 1025px) and (max-width: 1400px)) {
+    .buttons {
+        left: 240px;
+    }
+
+}

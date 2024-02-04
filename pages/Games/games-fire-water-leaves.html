@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/bugorfeature.css">
+
+    <title>BUGorFEATURE</title>
+    <style>
+
+        #rulesModal {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+    
+        .modal-content {
+          background-color: #fff;
+          padding: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: left;
+        }
+    
+        #closeBtn {
+          cursor: pointer;
+          color: #555;
+          float: right;
+          font-size: 20px;
+          font-weight: bold;
+        }
+    
+        #closeBtn:hover {
+          color: #000;
+        }
+      </style>
+    
+</head>
+
+<body>
+    <canvas id="gameCanvas" width="700" height="700"></canvas>
+    <div class="buttons">
+        <input type="button" id="start" value="Start">
+        <button id="pause">Pause</button>
+        <button id="reset">Reset</button>
+        <button onclick="openRulesModal()">Rules</button>
+        <div id="qa">
+            <label for="qa-text"><b>QA:</label>
+            <input type="text" id="qaText" maxlength="6" size="6">
+        </div>
+        <div id="dev">
+            <label for="dev-text"><b>DEV:</label>
+            <input type="text" id="devText" maxlength="6" size="6">
+        </div>
+    </div>
+    <!-- For Future -->
+    <!-- <div id="ballNumber">
+        <label for="numberInput">Between 5 and 30:</label>
+        <input type="number" id="numberInput" oninput="validateNumber()" required>
+
+        <p id="error-message" style="color: red;"></p>
+    </div> -->
+
+    <div id="rulesModal">
+      <div class="modal-content">
+        <span id="closeBtn" onclick="closeRulesModal()">&times;</span>
+       
+      </div>
+    </div>
+
+
+
+
+    <script src="../../js/bug-or-feature.js"></script>
+    <script>
+        function openRulesModal() {
+            alert('Team Setup:QA and Dev each have 15 balls: blue for water, red for fire,'+
+             'and green for leaves.Objective:QA and Dev take turns selecting a ball.'+
+             'QA win marks it as a bug; Dev win marks it as a feature.'+
+             'A tie results in the Project Manager winning.Elemental' +
+             'Interactions:Water ball touching a fire ball turns the fire ball into water.'+
+             'Water ball touching a leaves ball turns the water into leaves.'+
+             'Leaves ball touching a fire ball turns the leaves into fire.'+
+             'Game Progression:The game continues until one type of ball dominates.')
+        }
+    
+        function closeRulesModal() {
+          document.getElementById('rulesModal').style.display = 'none';
+        }
+      </script>
+
+</body>
+
+</html>
