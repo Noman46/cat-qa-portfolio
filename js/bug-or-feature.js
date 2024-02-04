@@ -14,7 +14,7 @@ class Particle {
         this.y = y;
         this.radius = radius;
         this.color = color;
-        this.type = type; // 'water' or 'fire' or 'leaves'
+        this.type = type; // 'water' or 'fire' or 'Leafs'
         this.dx = (Math.random() - 0.5) * 2;
         this.dy = (Math.random() - 0.5) * 2;
     }
@@ -60,13 +60,13 @@ for (let i = 0; i < 15; i++) {
     const type = 'fire';
     particles.push(new Particle(x, y, radius, color, type));
 }
-// Create Leaves droplets
+// Create Leafs droplets
 for (let i = 0; i < 15; i++) {
     const radius = 10;
     const x = Math.random() * (canvas.width - 2 * radius) + radius;
     const y = Math.random() * (canvas.height - 2 * radius) + radius;
     const color = "green";
-    const type = 'leaves';
+    const type = 'Leafs';
     particles.push(new Particle(x, y, radius, color, type));
 }
 function checkCollision(waterParticle, fireParticle) {
@@ -81,7 +81,7 @@ function checkCollision(waterParticle, fireParticle) {
 
 let water = 15;
 let fire = 15;
-let leaves = 15;
+let Leafs = 15;
 let animationId;
 let animationBreaker = 0;
 
@@ -104,23 +104,23 @@ function gameLoop() {
                     fire = fire - 1;
 
                 }
-                if (particle.type === 'leaves' && otherParticle.type === 'fire' && checkCollision(particle, otherParticle)) {
+                if (particle.type === 'Leafs' && otherParticle.type === 'fire' && checkCollision(particle, otherParticle)) {
                     // Transform water particle to fire particle
                     particle.type = 'fire';
                     particle.color = 'red';
                     fire = fire + 1;
-                    leaves = leaves - 1
+                    Leafs = Leafs - 1
                 }
-                if (particle.type === 'water' && otherParticle.type === 'leaves' && checkCollision(particle, otherParticle)) {
+                if (particle.type === 'water' && otherParticle.type === 'Leafs' && checkCollision(particle, otherParticle)) {
                     // Transform water particle to fire particle
-                    particle.type = 'leaves';
+                    particle.type = 'Leafs';
                     particle.color = 'green';
-                    leaves = leaves + 1;
+                    Leafs = Leafs + 1;
                     water = water - 1;
                 }
             }
         }
-        if (water === 45 || leaves === 45 || fire === 45) {
+        if (water === 45 || Leafs === 45 || fire === 45) {
             let winner;
             animationBreaker = 45
             if (particle.type === qaTextValue.value.toLowerCase()) {
@@ -179,12 +179,24 @@ resetButton.addEventListener("click", function () {
 
 
 function openRulesModal() {
-    alert('Team Setup:QA and Dev each have 15 balls: blue for water, red for fire,'+
-     'and green for leaves.Objective:QA and Dev take turns selecting a ball.'+
-     'QA win marks it as a bug; Dev win marks it as a feature.'+
-     'A tie results in the Project Manager winning.Elemental' +
-     'Interactions:Water ball touching a fire ball turns the fire ball into water.'+
-     'Water ball touching a leaves ball turns the water into leaves.'+
-     'Leaves ball touching a fire ball turns the leaves into fire.'+
-     'Game Progression:The game continues until one type of ball dominates.')
+    var gameRuleText =  'Rules :\n'+
+                            '1. Water ball touching a Fire ball > turns the Fire ball into water.\n'+
+                            '2. Fire ball touching a Leaf ball > turns the Leaf ball into Fire.\n'+
+                            '3. Leaf ball touching a Water ball > turns the Water ball into Leaf.\n'+
+                            '---------------------------------------------------------------.\n'+
+                            '4. Type water or Fire or Leaf in QA input field.\n'+
+                            '5. Type anything other then the QA have typed.\n'+
+                            '6. Click on the start button.\n'+
+                            '7. If QA wins then it a bug .\n'+
+                            '8. If Dev wins then it is feature.\n'+
+                            '9. If nobody wins then PM wins and we need to call a meating to decide if it is bug or not.\n'+
+                            '-------------------------------------------------------------\n'+
+                            'Example :\n'+
+                            'Say, QA choose water, then Dev have to choose from water or fire.\n'+
+                            'Say Dev chooses fire. At the end if all the balls turn into fire then Dev wins.'+
+                            'If dev wins then it is a feature.\n'
+                            'On the other hand, If all the balls at the end are water then QA wins and it is Bug then.'+
+                            'If it is not either water or Fire, that means at the end all the balls are Green means Leaf.'+
+                            'Then We need to call the Project manager to decide wether Bug or Feature -- > PM.'
+    alert(gameRuleText)
 }
