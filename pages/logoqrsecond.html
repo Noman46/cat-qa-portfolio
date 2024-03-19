@@ -25,7 +25,7 @@
         .logo {
             width: 0;
             height: 0;
-            animation: fadeIn 10s ease-out;
+            animation: logoEmerge 10s ease-out;
         }
 
         .container {
@@ -71,31 +71,10 @@
             border: 1px solid black;
         }
 
-        @keyframes fadeIn {
+        @keyframes logoEmerge {
             0% {
-                width: 0;
-                height: 0;
-            }
-
-            25% {
-                width: 50px;
-                /* Adjust as needed */
-                height: 25px;
-                /* Adjust as needed */
-            }
-
-            50% {
-                width: 100px;
-                /* Adjust as needed */
-                height: 50px;
-                /* Adjust as needed */
-            }
-
-            75% {
-                width: 150px;
-                /* Adjust as needed */
-                height: 75px;
-                /* Adjust as needed */
+                width: 20px;
+                height: 10px;
             }
 
             100% {
