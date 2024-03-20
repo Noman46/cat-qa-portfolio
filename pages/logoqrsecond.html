@@ -36,6 +36,7 @@
 
         }
 
+
         .main-div {
             width: 500px;
             height: 700px;
@@ -49,26 +50,51 @@
         .section:first-child {
             height: 400px;
             border: 1px solid black;
+            background-color: #FF6F61;
+            position: relative;
+            /* Vivid Reddish */
         }
 
         .section:nth-child(2) {
             height: 150px;
             border: 1px solid black;
+            background-color: #FFD166;
+            /* Bright Yellow */
         }
 
         .section:nth-child(3) {
             height: 96px;
             border: 1px solid black;
+            background-color: #06D6A0;
+            /* Turquoise Green */
         }
 
         .section:nth-child(4) {
             height: 96px;
             border: 1px solid black;
+            background-color: #118AB2;
+            /* Dark Cyan Blue */
         }
 
         .section:nth-child(5) {
             height: 97px;
             border: 1px solid black;
+            background-color: #073B4C;
+            /* Deep Teal */
+        }
+
+        .image-div {
+            position: absolute;
+            width: 90px;
+            height: 70px;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 100;
         }
 
         @keyframes logoEmerge {
@@ -91,6 +117,193 @@
                 height: 100%;
             }
         }
+
+        @media only screen and (max-width: 700px) {
+            .image-div {}
+        }
+
+        #icon-1 {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            transform: rotate(45deg);
+            animation: updown 5s ease infinite;
+        }
+
+        @keyframes updown {
+            0% {
+                transform: translateY(-10%);
+            }
+
+            50% {
+                transform: translateY(10%);
+            }
+
+            100% {
+                transform: translateY(-10%);
+            }
+        }
+
+        #icon-2 {
+            position: absolute;
+            top: 300px;
+            left: 200px;
+            transform: rotate(45deg);
+            animation: updown 5s ease infinite;
+        }
+
+        #icon-3 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 190px;
+            left: 400px;
+            transform: rotate(45deg);
+            animation: updown 5s ease infinite;
+        }
+
+        #icon-4 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 130px;
+            left: 190px;
+            animation: updown 5s ease infinite;
+        }
+
+        #icon-5 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 120px;
+            left: 5px;
+            animation: updown 5s ease infinite;
+        }
+
+        #icon-6 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 150px;
+            left: 120px;
+            animation: updown 5s ease infinite;
+
+        }
+
+        #icon-7 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 230px;
+            left: 100px;
+            transform: rotate(45deg);
+        }
+
+        #icon-8 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 230px;
+            left: 150px;
+        }
+
+        #icon-9 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 260px;
+            left: 280px;
+        }
+
+        #icon-10 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 35px;
+            left: 330px;
+        }
+
+        #icon-11 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 250px;
+            left: 20px;
+        }
+
+        #icon-12 {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            top: 250px;
+            left: 410px;
+        }
+
+        #icon-13 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 155px;
+            left: 240px;
+        }
+
+        #icon-14 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 175px;
+            left: 320px;
+        }
+
+        #icon-15 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 100px;
+            left: 380px;
+        }
+
+        #icon-16 {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 35px;
+            left: 95px;
+        }
+
+        #icon-17 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 35px;
+            left: 420px;
+        }
+
+        #icon-18 {
+            position: absolute;
+            top: 95px;
+            left: 5%;
+            transform: rotate(-100deg);
+        }
+
+        #icon-19 {
+            position: absolute;
+            top: 125px;
+            left: 90%;
+            transform: rotate(-100deg);
+        }
+
+
+        @media only screen and (max-width: 700px) {
+            .main-div {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        /* @media only screen and (max-width: 700px) {
+            .image-div {}
+        } */
     </style>
 </head>
 
@@ -101,7 +314,33 @@
 
     <div class="container">
         <div class="main-div">
-            <div class="section"></div>
+            <div class="section">
+                <div class="image-div">
+
+                </div>
+                <img id="icon-1" class="icon" src="../images/icons/github-icon-32.png">
+                <img id="icon-2" class="icon" src="../images/icons/linkedin-icon-24.png">
+                <img id="icon-3" class="icon" src="../images/icons/arrow.png">
+                <!-- <img id="icon-4" class="icon" src="../images/icons/art.png"> -->
+                <img id="icon-5" class="icon" src="../images/icons/draw.png">
+                <img id="icon-6" class="icon" src="../images/icons/earth.png">
+                <img id="icon-7" class="icon" src="../images/icons/exercise.png">
+                <!-- <img id="icon-8" class="icon" src="../images/icons/fly.png"> -->
+                <img id="icon-9" class="icon" src="../images/icons/hand.png">
+                <img id="icon-10" class="icon" src="../images/icons/hand2.png">
+                <img id="icon-11" class="icon" src="../images/icons/palm-tree.png">
+                <img id="icon-12" class="icon" src="../images/icons/paper-airplane.png">
+                <img id="icon-13" class="icon" src="../images/icons/pencil.png">
+                <img id="icon-14" class="icon" src="../images/icons/social.png">
+                <img id="icon-15" class="icon" src="../images/icons/thumb.png">
+                <img id="icon-16" class="icon" src="../images/icons/tree.png">
+                <img id="icon-17" class="icon" src="../images/icons/tshirt.png">
+                <img id="icon-18" class="icon" src="../images/icons/linkedin-icon-24.png">
+                <img id="icon-19" class="icon" src="../images/icons/linkedin-icon-24.png">
+
+
+
+            </div>
             <div class="section"></div>
             <div class="section"></div>
             <div class="section"></div>
@@ -113,7 +352,7 @@
         setTimeout(function () {
             document.querySelector('.logo-container').style.display = 'none';
             document.querySelector('.container').style.display = 'flex';
-        }, 10000);
+        }, 100);
     </script>
 </body>
 
