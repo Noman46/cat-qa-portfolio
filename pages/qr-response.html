@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Div Layout</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap">
+    <title>Nomanibrahim QR Response</title>
 
     <style>
         body,
         html {
-            margin: 0;
+            margin: 5px;
             padding: 0;
             height: 100%;
         }
@@ -40,46 +41,67 @@
         .main-div {
             width: 500px;
             height: 700px;
-            border: 1px solid black;
+            box-shadow: 5px 5px 10pxrgb(83, 79, 79);
             display: flex;
             flex-direction: column;
         }
 
 
+        .dummy-text {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0;
+            padding: 10px;
+            font-weight: 900;
+            top: 50%;
+            text-align: center;
+        }
+
+        .move-text {
+            position: relative;
+            width: 250px;
+            height: 50px;
+            top: -5%;
+            left: 10%;
+            justify-content: center;
+            transform: translate(-50%, -50%);
+            animation: updown2 5s ease infinite;
+
+        }
 
         .section:first-child {
             height: 400px;
-            border: 1px solid black;
             background-color: #FF6F61;
             position: relative;
-            /* Vivid Reddish */
+
         }
 
         .section:nth-child(2) {
             height: 150px;
-            border: 1px solid black;
             background-color: #FFD166;
-            /* Bright Yellow */
+            box-shadow: 2px 2px 10px #533c24 inset;
         }
 
         .section:nth-child(3) {
             height: 96px;
-            border: 1px solid black;
+
             background-color: #06D6A0;
-            /* Turquoise Green */
+            box-shadow: 2px 2px 10px #255959 inset;
         }
 
         .section:nth-child(4) {
             height: 96px;
-            border: 1px solid black;
+
             background-color: #118AB2;
+            box-shadow: 2px 2px 10px #1b353e inset;
             /* Dark Cyan Blue */
         }
 
         .section:nth-child(5) {
             height: 97px;
-            border: 1px solid black;
-            background-color: #073B4C;
+            background-color: #FF6F61;
+            box-shadow: 2px 2px 10px #0c0504 inset;
             /* Deep Teal */
         }
 
@@ -154,14 +176,33 @@
             }
         }
 
+        .link-icon {
+            position: relative;
+            width: 25px;
+            height: 25px;
+            top: 50%;
+            left: 10%;
+            justify-content: center;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .link-icon-img {
+            position: relative;
+            width: 25px;
+            height: 25px;
+            animation: updown 5s ease infinite;
+        }
+
         #icon-1 {
             position: absolute;
             width: 25px;
             height: 25px;
             top: 5px;
-            left:1%;
+            left: 1%;
             animation: updown 5s ease infinite;
         }
+
 
 
         #icon-2 {
@@ -184,9 +225,9 @@
 
         #icon-4 {
             position: absolute;
-            width: 40px;
-            height: 40px;
-            top: 130px;
+            width: 25px;
+            height: 25px;
+            top: 140px;
             left: 37%;
             animation: updown 5s ease infinite;
         }
@@ -234,16 +275,16 @@
             width: 40px;
             height: 40px;
             top: 85%;
-            left: 280px;
+            left: 78%;
             animation: updown 5s ease infinite;
         }
 
         #icon-10 {
             position: absolute;
-            width: 40px;
-            height: 40px;
+            width: 35px;
+            height: 35px;
             top: 35px;
-            left: 65%;
+            left: 70%;
             animation: updown2 3s ease infinite;
         }
 
@@ -258,10 +299,10 @@
 
         #icon-12 {
             position: absolute;
-            width: 30px;
-            height: 30px;
+            width: 25px;
+            height: 25px;
             top: 90%;
-            left: 90%;
+            left: 92%;
         }
 
         #icon-13 {
@@ -316,6 +357,7 @@
             transform: rotate(-100deg);
             animation: updown 5s ease infinite;
         }
+
         #icon-19 {
             position: absolute;
             width: 30px;
@@ -330,7 +372,7 @@
             width: 40px;
             height: 40px;
             top: 125px;
-            left: 90%;
+            left: 85%;
             transform: rotate(20deg);
         }
 
@@ -427,10 +469,53 @@
 
 
             </div>
-            <div class="section"></div>
-            <div class="section"></div>
-            <div class="section"></div>
-            <div class="section"></div>
+            <div class="section">
+                <p class="dummy-text">
+                    Hi, I am Noman Ibrahim. A Software Engineer (QA)
+                </p>
+            </div>
+            <div class="section">
+                <div class="link-icon">
+                    <a href="https://catqa.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <img class="link-icon-img" src="../images/icons/web.png">
+                    </a>
+                </div>
+                <div class="move-text">
+                    <p class="dummy-text">
+                        My Personal <a href="https://catqa.netlify.app/" target="_blank"
+                            rel="noopener noreferrer">Website</a>
+                    </p>
+                </div>
+            </div>
+            <div class="section">
+                <div class="link-icon">
+                    <a href="https://www.linkedin.com/in/noman-ibrahim-932410144/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="link-icon-img" src="../images/icons/linkedin-icon-24.png">
+                    </a>
+                </div>
+                <div class="move-text">
+                    <p class="dummy-text">
+                        My Linkedin <a href="https://www.linkedin.com/in/noman-ibrahim-932410144/" target="_blank"
+                            rel="noopener noreferrer">Linkedin</a>
+                    </p>
+                </div>
+
+            </div>
+            <div class="section">
+                <div class="link-icon">
+                    <a href="https://github.com/Noman46" target="_blank" rel="noopener noreferrer">
+                        <img class="link-icon-img" src="../images/icons/github-icon-32.png">
+                    </a>
+                </div>
+                <div class="move-text">
+                    <p class="dummy-text">
+                        My Github <a href="https://github.com/Noman46" target="_blank"
+                            rel="noopener noreferrer">Github</a>
+                    </p>
+                </div>
+
+            </div>
         </div>
     </div>
     <script>
