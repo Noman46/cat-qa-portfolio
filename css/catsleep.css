@@ -8,27 +8,7 @@
     left: 50%;
     top: 50%;
 }
-.tooltip {
-    position: relative;
-    display: inline-block;
-    top: 10%;
-    left: 30%;
-}
-.tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: orange;
-    text-align: center;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -60px;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
+
 .catcontent:hover .tooltiptext {
     visibility: visible;
     font-family: 'Courgette', cursive;
@@ -195,44 +175,14 @@
         transform: scale(1.6);
     }
 }
-.thinkCercle1{
-    visibility: hidden;
-    height: 8px;
-    width: 8px;
-    background-color: black;
-    position: absolute;
-    left: 30px;
-    top: -30px;
-    border: 1px solid white;
-    border-radius: 50px 50px;
-    transition: opacity 0.3s linear 20s;
-}
+
 .catcontent:hover .thinkCercle1{
     visibility: visible;
     opacity: 1;
     
     
 }
-.thinkCercle2{
-    height: 15px;
-    width: 15px;
-    background-color: black;
-    position: absolute;
-    left: 20px;
-    top: -45px;
-    border: 1px solid white;
-    border-radius: 50px 50px;
-}
-.thinkCercle3{
-    height: 30px;
-    width: 30px;
-    background-color: black;
-    position: absolute;
-    left: 0;
-    top: -65px;
-    border: 1px solid white;
-    border-radius: 50px 50px;
-}
+
 .shadow{
     height: 10px;
     width: 240px;

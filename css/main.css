@@ -1,80 +1,114 @@
-
-*
-{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 
 
 }
 
-.container{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    overflow: auto;
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
 }
+
 .container .section {
-    position: relative;
-    width: 100%;
-    height: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 
 
-.container .section:nth-child(1){
-    background-color: #000000;
-    top: 0;
+.container .section:nth-child(1) {
+  background-color: #000000;
+  top: 0;
 }
 
-.container .section:nth-child(2){
-    background: #000000;
+.container .section:nth-child(2) {
+  background: #000000;
 }
-.container .section:nth-child(3){
-    background: #000000;
+
+.container .section:nth-child(3) {
+  background: #000000;
 }
 
 
-.box 
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  /* Keeps it above other elements */
+}
+
+#cat-text {
+  position: relative;
+  top: 120px;
+  width: 100%;
+  height: 40px;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  color: orange;
+  font-size: 2.7vw;
+  font-family: Georgia, serif;
+  text-align: center;
+
+}
+#cat-text span{
+  position: relative;
+  color: orange;
+  display: inline-block;
+  animation: wavyname 5s ease-in-out infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+.wavy .nameWord{
+  color: gray;
+}
+@keyframes wavyname
 {
-    width: 20px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid yellowgreen;
-    border-radius: 60px;
-    position: absolute;
-    top: 85%;
-    left: 47%;
-    z-index: 500;
+  0%
+  {
+      transform: translateY(0px);
+  }
+  20%
+  {
+      transform: translateY(-20px);
+  }
+  40%,100%
+  {
+      transform: translateY(0px);
+  }
+}
 
-    .scroll
-    {
-      position: absolute;
-      width: 2px;
-      height: 8px;
-      border-radius: 50%;
-      background: red;
-      top: 5px;
-      left: 9px;
-    }
-    
-    .circle {
-      position: absolute;
-      width: 5px;
-      height: 5px;
-      border-radius: 50%;
-      background: yellowgreen;
-      inset: 0;
-      margin: auto;
-      animation: circle 1.5s ease-in-out infinite alternate;
-    }
+@media (max-width: 768px) {
+  #cat-text {
+    height: 30px;
+    /* Adjust height for smaller screens */
+    font-size: 4vw;
+    /* Larger responsive font size for medium devices */
   }
-  @keyframes circle {
-    0% {
-      transform: translateY(-3px);
-    }
-    100% {
-      transform: translateY(8px);
-      opacity: 0;
-    }
+}
+
+@media (max-width: 480px) {
+  #cat-text {
+    height: 25px;
+    /* Further adjust for smaller screens */
+    font-size: 4vw;
+    /* Even larger responsive font size for small devices */
   }
-  
+}
+
+@keyframes circle {
+  0% {
+    transform: translateY(-3px);
+  }
+
+  100% {
+    transform: translateY(8px);
+    opacity: 0;
+  }
+}
