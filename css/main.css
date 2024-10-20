@@ -54,7 +54,7 @@
   justify-content: center;
   color: orange;
   font-size: 2.7vw;
-  font-family: Georgia, serif;
+  font-weight: 100;
   text-align: center;
 
 }
@@ -64,9 +64,6 @@
   display: inline-block;
   animation: wavyname 5s ease-in-out infinite;
   animation-delay: calc(0.2s * var(--i));
-}
-.wavy .nameWord{
-  color: gray;
 }
 @keyframes wavyname
 {
