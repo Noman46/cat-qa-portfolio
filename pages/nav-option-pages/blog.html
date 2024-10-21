@@ -22,8 +22,6 @@
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous">
         </script>
     <style>
-
-
         .btn-custom {
             background-color: #FFED8A;
             color: black;
@@ -116,7 +114,8 @@
                             <!-- Gold border for accent -->
                             <img src="../../images/blog/code-probelms.png" class="card-img-top" alt="Article 1">
                             <div class="card-body" style="height:150px; overflow: hidden;">
-                                <h5 class="card-title" style="color: #add8e6;">Breaking Barriers: Coding for QA Beginners</h5> <!-- Gold title -->
+                                <h5 class="card-title" style="color: #add8e6;">Breaking Barriers: Coding for QA
+                                    Beginners</h5> <!-- Gold title -->
                                 <!-- Light gray text -->
                                 <a href="#" class="btn btn-custom">Read More</a>
                                 <!-- Gold button with black text -->
@@ -173,13 +172,14 @@
             $("#insect").load("../common/insect.html");
             $("#header").load("../common/header.html");
         });
-            const redbox = document.querySelector('.redbox');
-            const message = document.getElementById('message');
-            message.style.display = 'none';
-            console.log(redbox)
-            const soundEffect = new Audio('../../utility/insect-pop-sound.mp3');
+        const redbox = document.querySelector('.redbox');
+        const message = document.getElementById('message');
+        const readMoreButtons = document.querySelectorAll('.btn-custom');
+        message.style.display = 'none';
+        console.log(redbox)
+        const soundEffect = new Audio('../../utility/insect-pop-sound.mp3');
 
-            function moveRedbox() {
+        function moveRedbox() {
 
             const windowWidth = window.innerWidth;
             const windowHeight = window.innerHeight;
@@ -202,12 +202,12 @@
         }
 
 
-            setInterval(moveRedbox, 2000);
+        setInterval(moveRedbox, 2000);
 
-            redbox.style.position = 'absolute';
-            redbox.style.transition = 'all 1.5s ease';
-            redbox.addEventListener('click', function () {
-                redbox.style.display = 'none';
+        redbox.style.position = 'absolute';
+        redbox.style.transition = 'all 1.5s ease';
+        redbox.addEventListener('click', function () {
+            redbox.style.display = 'none';
             soundEffect.play();
             message.style.position = 'relative'
             message.style.color = "red"
@@ -218,7 +218,12 @@
             }, 3000);
         });
 
-
+        readMoreButtons.forEach(button => {
+            button.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default behavior of the anchor
+                alert("আর কিছু দিন ধৈর্য ধর, রসুন বুনেছি, তারপর এটা ঠিক হবে।")
+            });
+        });
     </script>
 </body>
 

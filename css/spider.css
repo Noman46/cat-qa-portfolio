@@ -141,7 +141,7 @@
     .myname {
       height: 25px;
       /* Further adjust for smaller screens */
-      font-size: 4vw;
+      font-size: 3vw;
       /* Even larger responsive font size for small devices */
     }
   }
