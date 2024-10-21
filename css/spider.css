@@ -132,7 +132,7 @@
     .myname {
       height: 30px;
       /* Adjust height for smaller screens */
-      font-size: 4vw;
+      font-size: 3vw;
       /* Larger responsive font size for medium devices */
     }
   }
