@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Bug Challenge</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #bug {
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        #bug::before, #bug::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 30px;
+            background-color: black;
+            top: 10px;
+        }
+
+        #bug::before {
+            left: -10px;
+            transform: rotate(45deg);
+        }
+
+        #bug::after {
+            right: -10px;
+            transform: rotate(-45deg);
+        }
+
+        #message {
+            display: none;
+            font-size: 2rem;
+            color: green;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="bug"></div>
+    <div id="message">Great!</div>
+
+    <script>
+        const bug = document.getElementById('bug');
+        const message = document.getElementById('message');
+
+        // Function to move the bug randomly
+        function moveBug() {
+            const x = Math.random() * (window.innerWidth - 50);
+            const y = Math.random() * (window.innerHeight - 50);
+            bug.style.transform = `translate(${x}px, ${y}px)`;
+        }
+
+        // Move the bug every 2 seconds
+        setInterval(moveBug, 2000);
+
+        // Remove the bug when clicked and show the message
+        bug.addEventListener('click', () => {
+            bug.style.display = 'none';
+            message.style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>

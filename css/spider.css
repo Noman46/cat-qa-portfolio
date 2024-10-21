@@ -99,12 +99,52 @@
 .myname
 {
     position: relative;
-    font-family: 'Courgette', cursive;
+    font-family: Georgia, serif;
     color: orange;
-    font-size: 3.5vw;
+    font-size: 2.6vw;
     font-weight: 100;
     z-index: 1;
 }
+.myname span{
+    position: relative;
+    color: orange;
+    display: inline-block;
+    animation: wavyname 5s ease-in-out infinite;
+    animation-delay: calc(0.2s * var(--i));
+  }
+
+  @keyframes wavyname
+  {
+    0%
+    {
+        transform: translateY(0px);
+    }
+    20%
+    {
+        transform: translateY(-20px);
+    }
+    40%,100%
+    {
+        transform: translateY(0px);
+    }
+  }
+@media (max-width: 768px) {
+    .myname {
+      height: 30px;
+      /* Adjust height for smaller screens */
+      font-size: 4vw;
+      /* Larger responsive font size for medium devices */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .myname {
+      height: 25px;
+      /* Further adjust for smaller screens */
+      font-size: 4vw;
+      /* Even larger responsive font size for small devices */
+    }
+  }
 .bug
 {
     position: absolute;

@@ -25,7 +25,7 @@
     position: relative;
     color: orange;
     display: inline-block;
-    animation: wavyname 3s ease-in-out infinite;
+    animation: wavyname 5s ease-in-out infinite;
     animation-delay: calc(0.2s * var(--i));
 }
 .wavy .nameWord{
